@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="DVDL_Logic layer/DVDL_LogicLayer.csproj" Id="4e31cec2-0e4f-4a58-be25-76147265948c" />
+  <Project Path="DVLD_DataAccess/DVLD_DataAccess.csproj" Id="4a06c732-47c2-400e-ac5b-cff670da18e2" />
+  <Project Path="DVLD_DTOs/DVLD_DTOs.csproj" Id="d9c3a57d-9b19-4e66-a8c5-943ffc65cc15" />
+  <Project Path="TestLayer/TestLayer.csproj" Id="5b7779ce-9a74-4094-b199-675ba7508e48" />
+  <Project Path="UserInterfaceLayer/UserInterfaceLayer.csproj" Id="a25614e7-776b-4211-852c-66d2d0499b06" />
+</Solution>

@@ -1,0 +1,365 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\HP\\Documents\\3.project documents\\DVLD_Project\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A25614E7-776B-4211-852C-66D2D0499B06}|UserInterfaceLayer\\UserInterfaceLayer.csproj|c:\\users\\hp\\documents\\3.project documents\\dvld_project\\userinterfacelayer\\license detain\\frmreleasedetainedlicense.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A25614E7-776B-4211-852C-66D2D0499B06}|UserInterfaceLayer\\UserInterfaceLayer.csproj|solutionrelative:userinterfacelayer\\license detain\\frmreleasedetainedlicense.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E31CEC2-0E4F-4A58-BE25-76147265948C}|DVDL_Logic layer\\DVDL_LogicLayer.csproj|C:\\Users\\HP\\Documents\\3.project documents\\DVLD_Project\\dvdl_logic layer\\detainedlicense\\clsdetainedlicense.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E31CEC2-0E4F-4A58-BE25-76147265948C}|DVDL_Logic layer\\DVDL_LogicLayer.csproj|solutionrelative:dvdl_logic layer\\detainedlicense\\clsdetainedlicense.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A06C732-47C2-400E-AC5B-CFF670DA18E2}|DVLD_DataAccess\\DVLD_DataAccess.csproj|C:\\Users\\HP\\Documents\\3.project documents\\DVLD_Project\\dvld_dataaccess\\dataproviders\\clsdetainedlicensedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A06C732-47C2-400E-AC5B-CFF670DA18E2}|DVLD_DataAccess\\DVLD_DataAccess.csproj|solutionrelative:dvld_dataaccess\\dataproviders\\clsdetainedlicensedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A25614E7-776B-4211-852C-66D2D0499B06}|UserInterfaceLayer\\UserInterfaceLayer.csproj|c:\\users\\hp\\documents\\3.project documents\\dvld_project\\userinterfacelayer\\license detain\\frmreleasedetainedlicense.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A25614E7-776B-4211-852C-66D2D0499B06}|UserInterfaceLayer\\UserInterfaceLayer.csproj|solutionrelative:userinterfacelayer\\license detain\\frmreleasedetainedlicense.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A25614E7-776B-4211-852C-66D2D0499B06}|UserInterfaceLayer\\UserInterfaceLayer.csproj|C:\\Users\\HP\\Documents\\3.project documents\\DVLD_Project\\userinterfacelayer\\frmtestfrom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A25614E7-776B-4211-852C-66D2D0499B06}|UserInterfaceLayer\\UserInterfaceLayer.csproj|solutionrelative:userinterfacelayer\\frmtestfrom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A25614E7-776B-4211-852C-66D2D0499B06}|UserInterfaceLayer\\UserInterfaceLayer.csproj|C:\\Users\\HP\\Documents\\3.project documents\\DVLD_Project\\userinterfacelayer\\license detain\\frmmanagedetainedlicenses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A25614E7-776B-4211-852C-66D2D0499B06}|UserInterfaceLayer\\UserInterfaceLayer.csproj|solutionrelative:userinterfacelayer\\license detain\\frmmanagedetainedlicenses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A25614E7-776B-4211-852C-66D2D0499B06}|UserInterfaceLayer\\UserInterfaceLayer.csproj|C:\\Users\\HP\\Documents\\3.project documents\\DVLD_Project\\userinterfacelayer\\license detain\\frmmanagedetainedlicenses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A25614E7-776B-4211-852C-66D2D0499B06}|UserInterfaceLayer\\UserInterfaceLayer.csproj|solutionrelative:userinterfacelayer\\license detain\\frmmanagedetainedlicenses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A25614E7-776B-4211-852C-66D2D0499B06}|UserInterfaceLayer\\UserInterfaceLayer.csproj|c:\\users\\hp\\documents\\3.project documents\\dvld_project\\userinterfacelayer\\international license applications\\frmmanageinternationallicenseapplications.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A25614E7-776B-4211-852C-66D2D0499B06}|UserInterfaceLayer\\UserInterfaceLayer.csproj|solutionrelative:userinterfacelayer\\international license applications\\frmmanageinternationallicenseapplications.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A25614E7-776B-4211-852C-66D2D0499B06}|UserInterfaceLayer\\UserInterfaceLayer.csproj|c:\\users\\hp\\documents\\3.project documents\\dvld_project\\userinterfacelayer\\international license applications\\frmmanageinternationallicenseapplications.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A25614E7-776B-4211-852C-66D2D0499B06}|UserInterfaceLayer\\UserInterfaceLayer.csproj|solutionrelative:userinterfacelayer\\international license applications\\frmmanageinternationallicenseapplications.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A25614E7-776B-4211-852C-66D2D0499B06}|UserInterfaceLayer\\UserInterfaceLayer.csproj|C:\\Users\\HP\\Documents\\3.project documents\\DVLD_Project\\userinterfacelayer\\license detain\\frmlicensedetain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A25614E7-776B-4211-852C-66D2D0499B06}|UserInterfaceLayer\\UserInterfaceLayer.csproj|solutionrelative:userinterfacelayer\\license detain\\frmlicensedetain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A25614E7-776B-4211-852C-66D2D0499B06}|UserInterfaceLayer\\UserInterfaceLayer.csproj|C:\\Users\\HP\\Documents\\3.project documents\\DVLD_Project\\userinterfacelayer\\license detain\\frmlicensedetain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A25614E7-776B-4211-852C-66D2D0499B06}|UserInterfaceLayer\\UserInterfaceLayer.csproj|solutionrelative:userinterfacelayer\\license detain\\frmlicensedetain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A25614E7-776B-4211-852C-66D2D0499B06}|UserInterfaceLayer\\UserInterfaceLayer.csproj|c:\\users\\hp\\documents\\3.project documents\\dvld_project\\userinterfacelayer\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A25614E7-776B-4211-852C-66D2D0499B06}|UserInterfaceLayer\\UserInterfaceLayer.csproj|solutionrelative:userinterfacelayer\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A25614E7-776B-4211-852C-66D2D0499B06}|UserInterfaceLayer\\UserInterfaceLayer.csproj|c:\\users\\hp\\documents\\3.project documents\\dvld_project\\userinterfacelayer\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A25614E7-776B-4211-852C-66D2D0499B06}|UserInterfaceLayer\\UserInterfaceLayer.csproj|solutionrelative:userinterfacelayer\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A25614E7-776B-4211-852C-66D2D0499B06}|UserInterfaceLayer\\UserInterfaceLayer.csproj|C:\\Users\\HP\\Documents\\3.project documents\\DVLD_Project\\userinterfacelayer\\frmtestfrom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A25614E7-776B-4211-852C-66D2D0499B06}|UserInterfaceLayer\\UserInterfaceLayer.csproj|solutionrelative:userinterfacelayer\\frmtestfrom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 368,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 470,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "frmManageDetainedLicenses.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Documents\\3.project documents\\DVLD_Project\\UserInterfaceLayer\\License Detain\\frmManageDetainedLicenses.cs",
+              "RelativeDocumentMoniker": "UserInterfaceLayer\\License Detain\\frmManageDetainedLicenses.cs",
+              "ToolTip": "C:\\Users\\HP\\Documents\\3.project documents\\DVLD_Project\\UserInterfaceLayer\\License Detain\\frmManageDetainedLicenses.cs",
+              "RelativeToolTip": "UserInterfaceLayer\\License Detain\\frmManageDetainedLicenses.cs",
+              "ViewState": "AgIAAKkAAAAAAAAAAAAYwMQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2022-10-14T20:32:57.806Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "frmManageDetainedLicenses.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\HP\\Documents\\3.project documents\\DVLD_Project\\UserInterfaceLayer\\License Detain\\frmManageDetainedLicenses.cs",
+              "RelativeDocumentMoniker": "UserInterfaceLayer\\License Detain\\frmManageDetainedLicenses.cs",
+              "ToolTip": "C:\\Users\\HP\\Documents\\3.project documents\\DVLD_Project\\UserInterfaceLayer\\License Detain\\frmManageDetainedLicenses.cs [Design]",
+              "RelativeToolTip": "UserInterfaceLayer\\License Detain\\frmManageDetainedLicenses.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-28T17:05:55.611Z",
+              "IsPinned": true,
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "frmLicenseDetain.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Documents\\3.project documents\\DVLD_Project\\UserInterfaceLayer\\License Detain\\frmLicenseDetain.cs",
+              "RelativeDocumentMoniker": "UserInterfaceLayer\\License Detain\\frmLicenseDetain.cs",
+              "ToolTip": "C:\\Users\\HP\\Documents\\3.project documents\\DVLD_Project\\UserInterfaceLayer\\License Detain\\frmLicenseDetain.cs",
+              "RelativeToolTip": "UserInterfaceLayer\\License Detain\\frmLicenseDetain.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2019-12-12T17:08:14.451Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "frmLicenseDetain.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\HP\\Documents\\3.project documents\\DVLD_Project\\UserInterfaceLayer\\License Detain\\frmLicenseDetain.cs",
+              "RelativeDocumentMoniker": "UserInterfaceLayer\\License Detain\\frmLicenseDetain.cs",
+              "ToolTip": "C:\\Users\\HP\\Documents\\3.project documents\\DVLD_Project\\UserInterfaceLayer\\License Detain\\frmLicenseDetain.cs [Design]",
+              "RelativeToolTip": "UserInterfaceLayer\\License Detain\\frmLicenseDetain.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2020-06-02T13:42:21.677Z",
+              "IsPinned": true,
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "clsDetainedLicenseData.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Documents\\3.project documents\\DVLD_Project\\DVLD_DataAccess\\DataProviders\\clsDetainedLicenseData.cs",
+              "RelativeDocumentMoniker": "DVLD_DataAccess\\DataProviders\\clsDetainedLicenseData.cs",
+              "ToolTip": "C:\\Users\\HP\\Documents\\3.project documents\\DVLD_Project\\DVLD_DataAccess\\DataProviders\\clsDetainedLicenseData.cs",
+              "RelativeToolTip": "DVLD_DataAccess\\DataProviders\\clsDetainedLicenseData.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAYwD0AAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-28T18:02:52.847Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "frmReleaseDetainedLicense.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\HP\\Documents\\3.project documents\\DVLD_Project\\UserInterfaceLayer\\License Detain\\frmReleaseDetainedLicense.cs",
+              "RelativeDocumentMoniker": "UserInterfaceLayer\\License Detain\\frmReleaseDetainedLicense.cs",
+              "ToolTip": "C:\\Users\\HP\\Documents\\3.project documents\\DVLD_Project\\UserInterfaceLayer\\License Detain\\frmReleaseDetainedLicense.cs [Design]",
+              "RelativeToolTip": "UserInterfaceLayer\\License Detain\\frmReleaseDetainedLicense.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-28T19:47:13.605Z",
+              "IsPinned": true,
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "frmReleaseDetainedLicense.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Documents\\3.project documents\\DVLD_Project\\UserInterfaceLayer\\License Detain\\frmReleaseDetainedLicense.cs",
+              "RelativeDocumentMoniker": "UserInterfaceLayer\\License Detain\\frmReleaseDetainedLicense.cs",
+              "ToolTip": "C:\\Users\\HP\\Documents\\3.project documents\\DVLD_Project\\UserInterfaceLayer\\License Detain\\frmReleaseDetainedLicense.cs",
+              "RelativeToolTip": "UserInterfaceLayer\\License Detain\\frmReleaseDetainedLicense.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAqwCgAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-28T19:48:18.393Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "clsDetainedLicense.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Documents\\3.project documents\\DVLD_Project\\DVDL_Logic layer\\DetainedLicense\\clsDetainedLicense.cs",
+              "RelativeDocumentMoniker": "DVDL_Logic layer\\DetainedLicense\\clsDetainedLicense.cs",
+              "ToolTip": "C:\\Users\\HP\\Documents\\3.project documents\\DVLD_Project\\DVDL_Logic layer\\DetainedLicense\\clsDetainedLicense.cs",
+              "RelativeToolTip": "DVDL_Logic layer\\DetainedLicense\\clsDetainedLicense.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACEAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-28T18:03:48.203Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "frmTestFrom.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Documents\\3.project documents\\DVLD_Project\\UserInterfaceLayer\\frmTestFrom.cs",
+              "RelativeDocumentMoniker": "UserInterfaceLayer\\frmTestFrom.cs",
+              "ToolTip": "C:\\Users\\HP\\Documents\\3.project documents\\DVLD_Project\\UserInterfaceLayer\\frmTestFrom.cs",
+              "RelativeToolTip": "UserInterfaceLayer\\frmTestFrom.cs",
+              "ViewState": "AgIAADsAAABATyLTsN0nwFUAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-28T17:52:25.459Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "frmManageInternationalLicenseApplications.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Documents\\3.project documents\\DVLD_Project\\UserInterfaceLayer\\International License Applications\\frmManageInternationalLicenseApplications.cs",
+              "RelativeDocumentMoniker": "UserInterfaceLayer\\International License Applications\\frmManageInternationalLicenseApplications.cs",
+              "ToolTip": "C:\\Users\\HP\\Documents\\3.project documents\\DVLD_Project\\UserInterfaceLayer\\International License Applications\\frmManageInternationalLicenseApplications.cs",
+              "RelativeToolTip": "UserInterfaceLayer\\International License Applications\\frmManageInternationalLicenseApplications.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAowFQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-28T21:56:26.717Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "frmManageInternationalLicenseApplications.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\HP\\Documents\\3.project documents\\DVLD_Project\\UserInterfaceLayer\\International License Applications\\frmManageInternationalLicenseApplications.cs",
+              "RelativeDocumentMoniker": "UserInterfaceLayer\\International License Applications\\frmManageInternationalLicenseApplications.cs",
+              "ToolTip": "C:\\Users\\HP\\Documents\\3.project documents\\DVLD_Project\\UserInterfaceLayer\\International License Applications\\frmManageInternationalLicenseApplications.cs [Design]",
+              "RelativeToolTip": "UserInterfaceLayer\\International License Applications\\frmManageInternationalLicenseApplications.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-28T21:56:24.531Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Main.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Documents\\3.project documents\\DVLD_Project\\UserInterfaceLayer\\Main.cs",
+              "RelativeDocumentMoniker": "UserInterfaceLayer\\Main.cs",
+              "ToolTip": "C:\\Users\\HP\\Documents\\3.project documents\\DVLD_Project\\UserInterfaceLayer\\Main.cs",
+              "RelativeToolTip": "UserInterfaceLayer\\Main.cs",
+              "ViewState": "AgIAAFYAAAAAAAAAAAA0wG8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-28T19:55:09.587Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Main.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\HP\\Documents\\3.project documents\\DVLD_Project\\UserInterfaceLayer\\Main.cs",
+              "RelativeDocumentMoniker": "UserInterfaceLayer\\Main.cs",
+              "ToolTip": "C:\\Users\\HP\\Documents\\3.project documents\\DVLD_Project\\UserInterfaceLayer\\Main.cs [Design]",
+              "RelativeToolTip": "UserInterfaceLayer\\Main.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-28T19:55:04.46Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "frmTestFrom.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\HP\\Documents\\3.project documents\\DVLD_Project\\UserInterfaceLayer\\frmTestFrom.cs",
+              "RelativeDocumentMoniker": "UserInterfaceLayer\\frmTestFrom.cs",
+              "ToolTip": "C:\\Users\\HP\\Documents\\3.project documents\\DVLD_Project\\UserInterfaceLayer\\frmTestFrom.cs [Design]",
+              "RelativeToolTip": "UserInterfaceLayer\\frmTestFrom.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-28T17:47:45.341Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 1727,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 1727,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8b06f53-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 527,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 345,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "FramesPinnedWhenTheyWereClosed": [
+    1051550671,
+    -693641824,
+    -1822088586,
+    -1971733623,
+    -1853761497,
+    -776396525,
+    -372030704,
+    -979248646,
+    -1036591083,
+    807718840,
+    -1991267630,
+    -1658170336,
+    204099283,
+    939755865,
+    1516209177,
+    1821911655,
+    -204503955,
+    -2079280682,
+    1992956156,
+    -1274005624,
+    -1249895070,
+    -809898939,
+    -36490523,
+    -1799365371,
+    33642070,
+    1622993537,
+    750668019,
+    -684434148,
+    -941532163,
+    -1760489857,
+    520420512,
+    212013913,
+    1155711915,
+    -290060146,
+    834764163,
+    -1039235646,
+    -1251144957,
+    -423664346,
+    2014925657,
+    -1666174728,
+    247185558,
+    926621649
+  ]
+}
