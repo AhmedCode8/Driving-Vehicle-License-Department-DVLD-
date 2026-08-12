@@ -1,186 +1,225 @@
-﻿using DVDL_Logic_layer.Person;
+﻿
+using DVDL_Logic_layer.Person;
 using DVLD_DTOs;
 using System;
 using System.Data;
 using System.Windows.Forms;
+
 namespace UserInterfaceLayer.People
 {
-    public partial class fmManagePeople : Form
+    public partial class frmManagePeople : Form
     {
-        public fmManagePeople()
+        private DataTable _dtSource;
+
+        public frmManagePeople()
         {
             InitializeComponent();
         }
 
-
-        private DataTable _dtSource;
-        private void _RefreshPersonList()
+        private void fmManagePeople_Load(object sender, EventArgs e)
         {
-            // جلب البيانات وتخزينها في المتغير العام أولاً
-            _dtSource = clsPerson.GetPersonList();
+            cbFilterBy.SelectedIndex = 0;
+            _RefreshPersonList(0);
+            _LayoutDataGridView();
+            StartExportPerson();
+        }
 
-            // ربط الـ Grid بالمتغير العام مباشرة لتتضح الرؤية
+
+        private async void StartExportPerson()
+        {
+            pbExportPersons.Value = 0;
+            DataTable dtPersons = clsPerson.GetPersonList();
+            clsPerson person = new clsPerson();
+            await person.ExportAllPersonsAsync(dtPersons, (progress) =>
+            {
+                pbExportPersons.Value = progress;
+            }
+            );
+        }
+
+        #region Data Loading & Grid Layout
+
+        private void _RefreshPersonList(int personID)
+        {
+            _dtSource = clsPerson.GetPersonList();
             dgvPeople.DataSource = _dtSource;
             lblRecordsCount.Text = _dtSource.Rows.Count.ToString();
         }
+
         private void _LayoutDataGridView()
         {
-            // Prevent user from adding or deleting rows manually
             dgvPeople.AllowUserToAddRows = false;
             dgvPeople.AllowUserToDeleteRows = false;
-
-            // Enable full row selection instead of individual cell selection
             dgvPeople.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dgvPeople.MultiSelect = false;
-
-            // Adjust column widths automatically to fill the grid
             dgvPeople.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-
-            // Make the grid read-only
             dgvPeople.ReadOnly = true;
         }
 
+        #endregion
+
+        #region Form Navigation & Actions (DRY Principle)
+
+        private void _OpenAddEditPersonForm(clsPersonDTO personDTO = null)
+        {
+            frmAddEditPerson addEditForm = (personDTO == null)
+                ? new frmAddEditPerson()
+                : new frmAddEditPerson(personDTO);
+
+            addEditForm.PersonSaved += _RefreshPersonList;
+            addEditForm.ShowDialog();
+        }
+
+        private void btnAddNewPerson_Click(object sender, EventArgs e)
+        {
+            _OpenAddEditPersonForm();
+        }
 
         private void tsmiAddNewPerson_Click(object sender, EventArgs e)
         {
-            frmAddEditPerson addEditPersonForm = new frmAddEditPerson();
-            addEditPersonForm.ShowDialog();
+            _OpenAddEditPersonForm();
         }
+
         private void tsmiEditPerson_Click(object sender, EventArgs e)
         {
+            if (!_IsRowSelected()) return;
 
-            if (dgvPeople.CurrentRow != null)
+            int personID = _GetSelectedPersonID();
+            clsPersonDTO personDTO = clsPerson.GetPersonById(personID);
+
+            if (personDTO != null)
             {
-
-                int personID = (int)dgvPeople.CurrentRow.Cells["PersonID"].Value;
-
-                clsPerson person = new clsPerson();
-
-
-                clsPersonDTO personDTO = clsPerson.GetPersonById(personID);
-
-
-                if (personDTO != null)
-                {
-
-                    frmAddEditPerson frmAddEditPerson = new frmAddEditPerson(personDTO);
-                    frmAddEditPerson.ShowDialog();
-                }
-                else
-                {
-                    MessageBox.Show("Sorry, this person's data was not found.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
+                _OpenAddEditPersonForm(personDTO);
             }
+            else
+            {
+                _ShowNotFoundError();
+            }
+        }
 
-        }
-        private void btnAddNewPerson_Click(object sender, EventArgs e)
-        {
-            frmAddEditPerson frmAddEditPerson = new frmAddEditPerson();
-            frmAddEditPerson.ShowDialog();
-        }
         private void tsmiShowDetails_Click(object sender, EventArgs e)
         {
+            if (!_IsRowSelected()) return;
 
-            if (dgvPeople.CurrentRow != null)
+            int personID = _GetSelectedPersonID();
+            clsPersonDTO personDTO = clsPerson.GetPersonById(personID);
+
+            if (personDTO != null)
             {
-                // 2️⃣ اصطياد الـ PersonID من السطر الحالي (نوع البيانات هنا هو int)
-                int personID = (int)dgvPeople.CurrentRow.Cells["PersonID"].Value;
-
-                // 3️⃣ استدعاء طبقة المنطق لجلب كائن الـ DTO الخاص بهذا الشخص
-                clsPerson person = new clsPerson();
-
-                // (افترضت هنا أن لديك دالة في الـ Repository تبحث عن الشخص بواسطة الـ ID وترجع الـ DTO الخاص به)
-                clsPersonDTO personDTO = clsPerson.GetPersonById(personID);
-
-                // 4️⃣ التأكد من أن البيانات وُجدت بنجاح قبل فتح الشاشة
-                if (personDTO != null)
-                {
-                    // نمرر كائن الـ DTO مباشرة إلى مشيد (Constructor) الشاشة الجديدة
-                    frmPersonDetails personDetailsForm = new frmPersonDetails(personDTO);
-                    personDetailsForm.ShowDialog();
-                }
-                else
-                {
-                    MessageBox.Show("Sorry, this person's data was not found.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
+                frmPersonDetails detailsForm = new frmPersonDetails(personDTO);
+                detailsForm.ShowDialog();
+            }
+            else
+            {
+                _ShowNotFoundError();
             }
         }
+
         private void tsmiDeletePerson_Click(object sender, EventArgs e)
         {
-            int personId = (int)dgvPeople.CurrentRow.Cells["PersonID"].Value;
+            if (!_IsRowSelected()) return;
 
-            clsPerson.DeletePerson(personId);
-            _RefreshPersonList();
-            _LayoutDataGridView();
+            if (MessageBox.Show("Are you sure you want to delete this person?", "Confirm Delete",
+                MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+            {
+                int personID = _GetSelectedPersonID();
+                clsPerson.DeletePerson(personID);
+                _RefreshPersonList(0);
+            }
         }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        #endregion
+
+        #region Filtering System (Clean & Small Functions)
 
         private void txtFilterValue_TextChanged(object sender, EventArgs e)
         {
             Filter();
         }
+
         private void Filter()
         {
             if (_dtSource == null) return;
 
-            // Reset filter if text is empty or search column is None
-            if (string.IsNullOrEmpty(txtFilterValue.Text.Trim()) || cbFilterBy.Text == "None")
+            string filterText = txtFilterValue.Text.Trim();
+            string filterBy = cbFilterBy.Text;
+
+            if (string.IsNullOrEmpty(filterText) || filterBy == "None")
             {
                 _dtSource.DefaultView.RowFilter = "";
                 return;
             }
 
-            // Map ComboBox items to Database Column Names
-            string columnName = "";
-            switch (cbFilterBy.Text)
-            {
-                case "Person ID": columnName = "PersonID"; break;
-                case "National No.": columnName = "NationalNo"; break;
-                case "First Name": columnName = "FirstName"; break;
-                case "Second Name": columnName = "SecondName"; break;
-                case "Third Name": columnName = "ThirdName"; break;
-                case "Last Name": columnName = "LastName"; break;
-                case "Nationality": columnName = "CountryName"; break; // Adjust to your view column name
-                case "Gender": columnName = "Gendor"; break;
-                case "Phone": columnName = "Phone"; break;
-                case "Email": columnName = "Email"; break;
-                default: columnName = "None"; break;
-            }
+            string columnName = _GetDatabaseColumnName(filterBy);
+            if (columnName == "None") return;
 
-            // Apply Filter based on data type
+            _ApplyRowFilterToView(columnName, filterText);
+        }
+
+        private string _GetDatabaseColumnName(string filterByText)
+        {
+            switch (filterByText)
+            {
+                case "Person ID":
+                    return "PersonID";
+                case "National No.":
+                    return "NationalNo";
+                case "First Name":
+                    return "FirstName";
+                case "Second Name":
+                    return "SecondName";
+                case "Third Name":
+                    return "ThirdName";
+                case "Last Name":
+                    return "LastName";
+                case "Nationality":
+                    return "CountryName";
+                case "Gender":
+                    return "Gendor";
+                case "Phone":
+                    return "Phone";
+                case "Email":
+                    return "Email";
+                default:
+                    return "None";
+            }
+        }
+
+        private void _ApplyRowFilterToView(string columnName, string filterText)
+        {
             if (columnName == "PersonID")
             {
-                // Check if the text is a valid number to prevent crash
-                if (int.TryParse(txtFilterValue.Text.Trim(), out int id))
+                if (int.TryParse(filterText, out int id))
                 {
                     _dtSource.DefaultView.RowFilter = $"{columnName} = {id}";
                 }
                 else
                 {
-                    _dtSource.DefaultView.RowFilter = ""; // Clear filter if invalid or empty
+                    _dtSource.DefaultView.RowFilter = "1 = 0"; // إرجاع نتيجة فارغة في حال كتب نصاً غير رقمي
                 }
             }
             else
             {
-                // String filter (LIKE)
-                _dtSource.DefaultView.RowFilter = $"{columnName} LIKE '{txtFilterValue.Text.Trim()}%'";
+                _dtSource.DefaultView.RowFilter = $"{columnName} LIKE '{filterText}%'";
             }
         }
+
         private void txtFilterValue_KeyPress(object sender, KeyPressEventArgs e)
         {
-            // If filtering by Person ID, allow digits and control keys (like Backspace) only
-            if (cbFilterBy.Text == "Person ID")
+            if (cbFilterBy.Text == "Person ID" && !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
             {
-                if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
-                {
-                    e.Handled = true; // Block the character
-                }
+                e.Handled = true;
             }
         }
+
         private void cbFilterBy_SelectedIndexChanged(object sender, EventArgs e)
         {
             txtFilterValue.Text = "";
-
-            // Hide text box if selection is "None", otherwise show it
             txtFilterValue.Visible = (cbFilterBy.Text != "None");
 
             if (txtFilterValue.Visible)
@@ -188,21 +227,36 @@ namespace UserInterfaceLayer.People
                 txtFilterValue.Focus();
             }
 
-            // Clear filter when selection changes
             if (_dtSource != null)
             {
                 _dtSource.DefaultView.RowFilter = "";
             }
         }
-        private void btnClose_Click(object sender, EventArgs e)
+
+        #endregion
+
+        #region Helper Methods (Security & Validation)
+
+        private bool _IsRowSelected()
         {
-            this.Close();
+            return dgvPeople.CurrentRow != null;
         }
-        private void fmManagePeople_Load(object sender, EventArgs e)
+
+        private int _GetSelectedPersonID()
         {
-            cbFilterBy.SelectedIndex = 0;
-            _RefreshPersonList();
-            _LayoutDataGridView();
+            return (int)dgvPeople.CurrentRow.Cells["PersonID"].Value;
+        }
+
+        private void _ShowNotFoundError()
+        {
+            MessageBox.Show("Sorry, this person's data was not found.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        #endregion
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

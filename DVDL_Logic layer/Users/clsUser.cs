@@ -101,7 +101,15 @@ namespace DVDL_Logic_layer.Users
         }
         public static clsUserDTO GetUserByID(int UserID)
         {
-            return clsUserData.GetUserByID(UserID);
+            clsUserDTO userDTO = clsUserData.GetUserByID(UserID);
+            if (userDTO != null)
+            {
+                // الخطوة الثانية: بما أننا حصلنا على PersonID الخاص بهذا المستخدم،
+                // نقوم فوراً بجلب بيانات الشخص المستقلة عبر دالة جلب الشخص القديمة
+                userDTO.PersonInfo = clsPerson.GetPersonById(userDTO.PersonID);
+            }
+
+            return userDTO;
         }
 
         public static bool IsUserExists(string userName)

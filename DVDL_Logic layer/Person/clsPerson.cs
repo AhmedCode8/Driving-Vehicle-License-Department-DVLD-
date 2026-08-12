@@ -2,7 +2,8 @@
 using DVLD_DTOs;
 using System;
 using System.Data;
-using System.Text.RegularExpressions; // 🌟 ضرورية لاستخدام الـ Regex
+using System.Text.RegularExpressions;
+using System.Threading.Tasks;
 namespace DVDL_Logic_layer.Person
 {
     #region Person Data Actions ()
@@ -10,10 +11,39 @@ namespace DVDL_Logic_layer.Person
     #endregion
     public class clsPerson
     {
+
+        public clsPerson(clsPersonDTO personDTO)
+        {
+            if (personDTO == null) return;
+
+            this.PersonID = personDTO.PersonID;
+            this.NationalNo = personDTO.NationalNo;
+            this.FirstName = personDTO.FirstName;
+            this.SecondName = personDTO.SecondName;
+            this.ThirdName = personDTO.ThirdName;
+            this.LastName = personDTO.LastName;
+            this.DateOfBirth = personDTO.DateOfBirth;
+            this.Gendor = personDTO.Gendor;
+            this.Address = personDTO.Address;
+            this.Phone = personDTO.Phone;
+            this.Email = personDTO.Email;
+            this.NationalityCountryID = personDTO.NationalityCountryID;
+            this.ImagePath = personDTO.ImagePath;
+
+            // 🌟 الحل الأذكى: الكائن يحدد حالته تلقائياً بناءً على الـ ID
+            this.Mode = (this.PersonID != -1 && this.PersonID != 0) ? enMode.Update : enMode.AddNew;
+        }
+        public clsPerson() { }
+
+
+
+
         #region Person Data Actions ( Object State & Properties)
         // 1. Object State.
         public enum enMode { AddNew = 0, Update = 1 }
         public enMode Mode = enMode.AddNew;
+        public static int MinimumAllowedAge = 18;
+
 
 
         public int PersonID { get; set; }
@@ -29,10 +59,11 @@ namespace DVDL_Logic_layer.Person
         public string Email { get; set; }
         public int NationalityCountryID { get; set; }
         public string ImagePath { get; set; }
+
         #endregion
 
         #region Person Data Actions (Add and edit)
-        private int _AddNew()
+        private bool _AddNew()
         {
             // 1. ننشئ كائن الـ DTO الذي تتوقعه طبقة البيانات، ونملأه من خصائص الكائن الحالي (this)
             clsPersonDTO personDTO = new clsPersonDTO
@@ -56,7 +87,7 @@ namespace DVDL_Logic_layer.Person
             this.PersonID = clsPersonData.InsertPerson(personDTO);
 
             // إذا نجحت العملية سيعود الـ ID برقم صحيح
-            return this.PersonID;
+            return PersonID != -1;
         }
 
         private bool _Update()
@@ -84,24 +115,23 @@ namespace DVDL_Logic_layer.Person
             return (clsPersonData.UpdatePerson(personDTO) > 0);
         }
 
-        public int Save()
+        public bool Save()
         {
             switch (Mode)
             {
                 case enMode.AddNew:
+                    if (_AddNew())
                     {
-                        {
-                            Mode = enMode.Update;
-                            return _AddNew();
-                        }
-                        return -1;
+                        Mode = enMode.Update;
+                        return true;
                     }
+                    return false;
+
                 case enMode.Update:
-                    {
-                        return _Update() ? this.PersonID : -1;
-                    }
+                    return _Update();
+
                 default:
-                    return -1;
+                    return false;
             }
         }
 
@@ -134,46 +164,33 @@ namespace DVDL_Logic_layer.Person
         }
         #endregion
 
-        #region Person Data Actions (Filter system )
-
-        #endregion
 
 
-        public clsPerson()
+        public async Task ExportAllPersonsAsync(DataTable personsTable, Action<int> onProgressChanged)
         {
+            // التحقق من وجود الجدول وتحويته على صفوف
+            if (personsTable == null || personsTable.Rows.Count == 0) return;
 
+            int totalCount = personsTable.Rows.Count;
+
+            for (int i = 0; i < totalCount; i++)
+            {
+                // محاكاة عملية معالجة لكل صف
+                //    await Task.Delay(10);
+
+                int progressPercent = ((i + 1) * 100) / totalCount;
+                onProgressChanged?.Invoke(progressPercent);
+            }
         }
-        public clsPerson(clsPersonDTO personDTO)
+        public static bool IsValidEmail(string emailText)
         {
-            // خطوة حماية: للتأكد من أن كائن الـ DTO يحتوي على بيانات فعلاً
-            if (personDTO == null) return;
+            if (string.IsNullOrWhiteSpace(emailText))
+                return false;
 
-            // مِلء الخصائص (Properties) بناءً على قيم الـ DTO
-            this.PersonID = personDTO.PersonID;
-            this.NationalNo = personDTO.NationalNo;
-            this.FirstName = personDTO.FirstName;
-            this.SecondName = personDTO.SecondName;
-            this.ThirdName = personDTO.ThirdName;
-            this.LastName = personDTO.LastName;
-            this.DateOfBirth = personDTO.DateOfBirth;
-            this.Gendor = personDTO.Gendor;
-            this.Address = personDTO.Address;
-            this.Phone = personDTO.Phone;
-            this.Email = personDTO.Email;
-            this.NationalityCountryID = personDTO.NationalityCountryID;
-            this.ImagePath = personDTO.ImagePath;
-
-            // طالما أن الكائن تم إنشاؤه من DTO، فهذا يعني أنه محمل من قاعدة البيانات
-            // لذلك نقوم بتحديث الـ Mode ليكون Update تلقائياً
-            this.Mode = enMode.Update;
-        }
-        public static bool IsEmailFormatCorrect(string text)
-        {
+            // string pattern = @"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$";
             string pattern = @"^[a-zA-Z0-9._%+-]+@gmail\.com$";
 
-            return Regex.IsMatch(text, pattern, RegexOptions.IgnoreCase);
+            return Regex.IsMatch(emailText, pattern, RegexOptions.IgnoreCase);
         }
-
     }
 }
-//a@gmail.com

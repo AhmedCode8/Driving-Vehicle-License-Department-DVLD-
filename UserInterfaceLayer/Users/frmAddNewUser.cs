@@ -17,7 +17,7 @@ namespace UserInterfaceLayer.Users
             set => _UserID = value;
         }
 
-        private int _PersonID => ctrlFindUserCard1.ReturnPersonID;
+        private int _PersonID => ctrlFindUserCard1.PersonID;
 
         public frmAddNewUser()
         {

@@ -35,26 +35,28 @@
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.SystemColors.Control;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.IndianRed;
-            this.label1.Location = new System.Drawing.Point(277, 40);
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
+            this.label1.Location = new System.Drawing.Point(0, 20);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(224, 37);
+            this.label1.Size = new System.Drawing.Size(940, 50);
             this.label1.TabIndex = 2;
             this.label1.Text = "Person Details";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnClose
             // 
-            this.btnClose.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnClose.BackColor = System.Drawing.Color.White;
+            this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnClose.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClose.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClose.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClose.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnClose.Image = global::UserInterfaceLayer.Properties.Resources.Close_32;
             this.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnClose.Location = new System.Drawing.Point(648, 372);
+            this.btnClose.Location = new System.Drawing.Point(810, 410);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(94, 30);
+            this.btnClose.Size = new System.Drawing.Size(110, 40);
             this.btnClose.TabIndex = 41;
             this.btnClose.Text = "Close";
             this.btnClose.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -63,23 +65,29 @@
             // 
             // ctrlPersonCard1
             // 
-            this.ctrlPersonCard1.Location = new System.Drawing.Point(12, 80);
+            this.ctrlPersonCard1.BackColor = System.Drawing.Color.White;
+            this.ctrlPersonCard1.Location = new System.Drawing.Point(20, 85);
             this.ctrlPersonCard1.Name = "ctrlPersonCard1";
-            this.ctrlPersonCard1.Size = new System.Drawing.Size(739, 286);
+            this.ctrlPersonCard1.Size = new System.Drawing.Size(900, 310);
             this.ctrlPersonCard1.TabIndex = 0;
             // 
             // frmPersonDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(767, 414);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(940, 470);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.ctrlPersonCard1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmPersonDetails";
-            this.Text = "PersonDetails";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Person Details";
+            this.Load += new System.EventHandler(this.frmPersonDetails_Load);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
