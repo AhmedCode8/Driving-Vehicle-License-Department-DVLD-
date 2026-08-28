@@ -1,6 +1,0 @@
-C:\Users\HP\Documents\3.project documents\DVLD_Project\DVLD_DTOs\bin\Debug\DVLD_DTOs.dll
-C:\Users\HP\Documents\3.project documents\DVLD_Project\DVLD_DTOs\bin\Debug\DVLD_DTOs.pdb
-C:\Users\HP\Documents\3.project documents\DVLD_Project\DVLD_DTOs\obj\Debug\DVLD_DTOs.csproj.AssemblyReference.cache
-C:\Users\HP\Documents\3.project documents\DVLD_Project\DVLD_DTOs\obj\Debug\DVLD_DTOs.csproj.CoreCompileInputs.cache
-C:\Users\HP\Documents\3.project documents\DVLD_Project\DVLD_DTOs\obj\Debug\DVLD_DTOs.dll
-C:\Users\HP\Documents\3.project documents\DVLD_Project\DVLD_DTOs\obj\Debug\DVLD_DTOs.pdb

@@ -28,19 +28,25 @@ namespace UserInterfaceLayer.Test_Types
         }
         private void _LayoutDataGridView()
         {
-            // Prevent user from adding or deleting rows manually
+            // منع المستخدم من الإضافة أو الحذف اليدوي من الـ Grid
             dgvTestTypes.AllowUserToAddRows = false;
             dgvTestTypes.AllowUserToDeleteRows = false;
 
-            // Enable full row selection instead of individual cell selection
+            // تفعيل تحديد السطر بالكامل بدلاً من الخلايا الفردية
             dgvTestTypes.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dgvTestTypes.MultiSelect = false;
 
-            // Adjust column widths automatically to fill the grid
-            dgvTestTypes.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-
-            // Make the grid read-only
+            // جعل الجدول للقراءة فقط
             dgvTestTypes.ReadOnly = true;
+
+            // 🌟 التعديل الجذري: ضبط العرض اليدوي للأعمدة ليتطابق مع الصورة تماماً
+            if (dgvTestTypes.Columns.Count > 0)
+            {
+                dgvTestTypes.Columns["TestTypeID"].Width = 110;
+                dgvTestTypes.Columns["TestTypeTitle"].Width = 200;
+                dgvTestTypes.Columns["TestTypeDescription"].Width = 450;
+                dgvTestTypes.Columns["TestTypeFees"].Width = 110;
+            }
         }
 
         private void ssToolStripMenuItem_Click(object sender, EventArgs e)
@@ -48,20 +54,21 @@ namespace UserInterfaceLayer.Test_Types
             int applicationTypeID = (int)dgvTestTypes.CurrentRow.Cells["TestTypeID"].Value;
 
             frmUpdateTestTypes frm = new frmUpdateTestTypes(applicationTypeID);
+            frm.TestTypesUpdated += _RefreshPersonList;
             frm.ShowDialog();
-            _RefreshPersonList();
-            _LayoutDataGridView();
+
         }
 
-        private void Button_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
+
 
         private void frmManageTestTypes_Load(object sender, EventArgs e)
         {
             _RefreshPersonList();
             _LayoutDataGridView();
+        }
+        private void Button_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

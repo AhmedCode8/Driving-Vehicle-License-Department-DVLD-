@@ -19,7 +19,6 @@ namespace UserInterfaceLayer.License_Detain
         public frmReleaseDetainedLicense(int licenseID)
         {
             InitializeComponent();
-            ctrlFilterIicenseCard1.LoadLicenseInfo(licenseID);
             _licenseID = licenseID; // نحفظ الرقم فقط ولا نستدعي التحميل هنا!
         }
 
@@ -28,7 +27,7 @@ namespace UserInterfaceLayer.License_Detain
         private clsLicenseDTO _selectedLicenseInfo;
         private clsDetainedLicenseDTO _detainedLicenseInfo;
         clsApplicationTypeDTO _applicationTypeDTO = clsApplicationTypes.GetApplicationTypeByID(5);
-
+        public event Action OnReleaseDetainedLicense;
 
 
         private void frmReleaseDetainedLicense_Load(object sender, EventArgs e)
@@ -149,9 +148,9 @@ namespace UserInterfaceLayer.License_Detain
                 MessageBox.Show("حدث خطأ أثناء حفظ الطلب!", "فشل الحفظ", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-
             // د. فك الاحتجاز وتحديث الواجهة
             _ExecuteReleaseAndHandleResult(applicationID, currentUserID);
+
         }
 
         // ==================== الدوال المساعدة (Helper Methods) ====================
@@ -212,6 +211,8 @@ namespace UserInterfaceLayer.License_Detain
             if (result != -1)
             {
                 _UpdateUIOnReleaseSuccess(applicationID);
+                OnReleaseDetainedLicense?.Invoke();
+
                 MessageBox.Show("License Released Successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else

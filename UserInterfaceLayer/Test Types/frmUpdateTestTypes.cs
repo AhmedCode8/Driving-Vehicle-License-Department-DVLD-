@@ -14,10 +14,10 @@ namespace UserInterfaceLayer.Test_Types
         }
         public frmUpdateTestTypes(int testTypeID)
         {
-            Info = clsTestTypes.GetTestTypeByID(testTypeID);
             InitializeComponent();
+            Info = clsTestTypes.GetTestTypeByID(testTypeID);
         }
-
+        public event Action TestTypesUpdated;
 
 
         private void frmUpdateTestTypes_Load(object sender, EventArgs e)
@@ -45,7 +45,7 @@ namespace UserInterfaceLayer.Test_Types
                 MessageBox.Show("An error occurred while saving the data. Please try again.", "Update Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-
+            TestTypesUpdated?.Invoke();
             MessageBox.Show("Test type data updated successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
             this.Close();
         }

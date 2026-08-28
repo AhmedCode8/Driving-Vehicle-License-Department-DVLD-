@@ -65,34 +65,37 @@
             // 
             this.tcApplication.Controls.Add(this.tpPersonalInfo);
             this.tcApplication.Controls.Add(this.tpApplicationInfo);
-            this.tcApplication.Location = new System.Drawing.Point(12, 63);
+            this.tcApplication.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tcApplication.Location = new System.Drawing.Point(16, 58);
             this.tcApplication.Name = "tcApplication";
             this.tcApplication.SelectedIndex = 0;
-            this.tcApplication.Size = new System.Drawing.Size(1031, 504);
+            this.tcApplication.Size = new System.Drawing.Size(1089, 584);
             this.tcApplication.TabIndex = 0;
             this.tcApplication.SelectedIndexChanged += new System.EventHandler(this.tcApplication_SelectedIndexChanged);
             // 
             // tpPersonalInfo
             // 
+            this.tpPersonalInfo.BackColor = System.Drawing.Color.White;
             this.tpPersonalInfo.Controls.Add(this.ctrlPersonFinder);
-            this.tpPersonalInfo.Location = new System.Drawing.Point(4, 22);
+            this.tpPersonalInfo.Location = new System.Drawing.Point(4, 26);
             this.tpPersonalInfo.Name = "tpPersonalInfo";
-            this.tpPersonalInfo.Padding = new System.Windows.Forms.Padding(3);
-            this.tpPersonalInfo.Size = new System.Drawing.Size(1023, 478);
+            this.tpPersonalInfo.Padding = new System.Windows.Forms.Padding(6);
+            this.tpPersonalInfo.Size = new System.Drawing.Size(1081, 554);
             this.tpPersonalInfo.TabIndex = 0;
             this.tpPersonalInfo.Text = "Personal Info";
-            this.tpPersonalInfo.UseVisualStyleBackColor = true;
             // 
             // ctrlPersonFinder
             // 
-            this.ctrlPersonFinder.Location = new System.Drawing.Point(0, 4);
+            this.ctrlPersonFinder.BackColor = System.Drawing.Color.White;
+            this.ctrlPersonFinder.Location = new System.Drawing.Point(8, 6);
             this.ctrlPersonFinder.Margin = new System.Windows.Forms.Padding(4);
             this.ctrlPersonFinder.Name = "ctrlPersonFinder";
-            this.ctrlPersonFinder.Size = new System.Drawing.Size(930, 465);
+            this.ctrlPersonFinder.Size = new System.Drawing.Size(1056, 538);
             this.ctrlPersonFinder.TabIndex = 0;
             // 
             // tpApplicationInfo
             // 
+            this.tpApplicationInfo.BackColor = System.Drawing.Color.White;
             this.tpApplicationInfo.Controls.Add(this.pictureBox2);
             this.tpApplicationInfo.Controls.Add(this.pictureBox1);
             this.tpApplicationInfo.Controls.Add(this.pictureBox7);
@@ -109,21 +112,19 @@
             this.tpApplicationInfo.Controls.Add(this.label3);
             this.tpApplicationInfo.Controls.Add(this.label4);
             this.tpApplicationInfo.Controls.Add(this.label6);
-            this.tpApplicationInfo.Location = new System.Drawing.Point(4, 22);
+            this.tpApplicationInfo.Location = new System.Drawing.Point(4, 26);
             this.tpApplicationInfo.Name = "tpApplicationInfo";
-            this.tpApplicationInfo.Padding = new System.Windows.Forms.Padding(3);
-            this.tpApplicationInfo.Size = new System.Drawing.Size(1023, 478);
+            this.tpApplicationInfo.Padding = new System.Windows.Forms.Padding(16);
+            this.tpApplicationInfo.Size = new System.Drawing.Size(1081, 554);
             this.tpApplicationInfo.TabIndex = 1;
             this.tpApplicationInfo.Text = "Application Info";
-            this.tpApplicationInfo.UseVisualStyleBackColor = true;
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::UserInterfaceLayer.Properties.Resources.money_32;
-            this.pictureBox2.Location = new System.Drawing.Point(256, 169);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox2.Location = new System.Drawing.Point(180, 157);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(40, 33);
+            this.pictureBox2.Size = new System.Drawing.Size(22, 22);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 101;
             this.pictureBox2.TabStop = false;
@@ -131,10 +132,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::UserInterfaceLayer.Properties.Resources.Person_32;
-            this.pictureBox1.Location = new System.Drawing.Point(256, 119);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1.Location = new System.Drawing.Point(180, 117);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(40, 33);
+            this.pictureBox1.Size = new System.Drawing.Size(22, 22);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 100;
             this.pictureBox1.TabStop = false;
@@ -142,10 +142,9 @@
             // pictureBox7
             // 
             this.pictureBox7.Image = global::UserInterfaceLayer.Properties.Resources.Person_32;
-            this.pictureBox7.Location = new System.Drawing.Point(256, 219);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox7.Location = new System.Drawing.Point(180, 197);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(40, 33);
+            this.pictureBox7.Size = new System.Drawing.Size(22, 22);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox7.TabIndex = 99;
             this.pictureBox7.TabStop = false;
@@ -153,10 +152,9 @@
             // pictureBox9
             // 
             this.pictureBox9.Image = global::UserInterfaceLayer.Properties.Resources.Calendar_32;
-            this.pictureBox9.Location = new System.Drawing.Point(256, 69);
-            this.pictureBox9.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox9.Location = new System.Drawing.Point(180, 77);
             this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(40, 33);
+            this.pictureBox9.Size = new System.Drawing.Size(22, 22);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox9.TabIndex = 98;
             this.pictureBox9.TabStop = false;
@@ -164,154 +162,157 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = global::UserInterfaceLayer.Properties.Resources.Number_32;
-            this.pictureBox4.Location = new System.Drawing.Point(256, 19);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox4.Location = new System.Drawing.Point(180, 37);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(40, 33);
+            this.pictureBox4.Size = new System.Drawing.Size(22, 22);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 97;
             this.pictureBox4.TabStop = false;
             // 
             // cbLicenseClasses
             // 
+            this.cbLicenseClasses.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbLicenseClasses.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.cbLicenseClasses.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(23)))), ((int)(((byte)(42)))));
             this.cbLicenseClasses.FormattingEnabled = true;
-            this.cbLicenseClasses.Location = new System.Drawing.Point(332, 128);
+            this.cbLicenseClasses.Location = new System.Drawing.Point(212, 116);
             this.cbLicenseClasses.Name = "cbLicenseClasses";
-            this.cbLicenseClasses.Size = new System.Drawing.Size(186, 21);
+            this.cbLicenseClasses.Size = new System.Drawing.Size(538, 25);
             this.cbLicenseClasses.TabIndex = 96;
             this.cbLicenseClasses.SelectedIndexChanged += new System.EventHandler(this.cbLicenseClasses_SelectedIndexChanged);
             // 
             // lblApplicationFees
             // 
             this.lblApplicationFees.AutoSize = true;
-            this.lblApplicationFees.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblApplicationFees.Location = new System.Drawing.Point(328, 180);
-            this.lblApplicationFees.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblApplicationFees.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.lblApplicationFees.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(163)))), ((int)(((byte)(74)))));
+            this.lblApplicationFees.Location = new System.Drawing.Point(212, 160);
             this.lblApplicationFees.Name = "lblApplicationFees";
-            this.lblApplicationFees.Size = new System.Drawing.Size(26, 22);
+            this.lblApplicationFees.Size = new System.Drawing.Size(40, 17);
             this.lblApplicationFees.TabIndex = 95;
-            this.lblApplicationFees.Text = "??";
+            this.lblApplicationFees.Text = "[????]";
             // 
             // lblLocalDrivingLicenseAppID
             // 
             this.lblLocalDrivingLicenseAppID.AutoSize = true;
-            this.lblLocalDrivingLicenseAppID.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLocalDrivingLicenseAppID.Location = new System.Drawing.Point(328, 30);
-            this.lblLocalDrivingLicenseAppID.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblLocalDrivingLicenseAppID.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.lblLocalDrivingLicenseAppID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(132)))), ((int)(((byte)(199)))));
+            this.lblLocalDrivingLicenseAppID.Location = new System.Drawing.Point(212, 40);
             this.lblLocalDrivingLicenseAppID.Name = "lblLocalDrivingLicenseAppID";
-            this.lblLocalDrivingLicenseAppID.Size = new System.Drawing.Size(26, 22);
+            this.lblLocalDrivingLicenseAppID.Size = new System.Drawing.Size(42, 17);
             this.lblLocalDrivingLicenseAppID.TabIndex = 91;
-            this.lblLocalDrivingLicenseAppID.Text = "??";
+            this.lblLocalDrivingLicenseAppID.Text = "[????]";
             // 
             // lblApplicationDate
             // 
             this.lblApplicationDate.AutoSize = true;
-            this.lblApplicationDate.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblApplicationDate.Location = new System.Drawing.Point(328, 79);
-            this.lblApplicationDate.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblApplicationDate.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.lblApplicationDate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(23)))), ((int)(((byte)(42)))));
+            this.lblApplicationDate.Location = new System.Drawing.Point(212, 80);
             this.lblApplicationDate.Name = "lblApplicationDate";
-            this.lblApplicationDate.Size = new System.Drawing.Size(26, 22);
+            this.lblApplicationDate.Size = new System.Drawing.Size(40, 17);
             this.lblApplicationDate.TabIndex = 92;
-            this.lblApplicationDate.Text = "??";
+            this.lblApplicationDate.Text = "[????]";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(354, 147);
-            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(0, 22);
+            this.label10.Size = new System.Drawing.Size(0, 17);
             this.label10.TabIndex = 93;
             // 
             // lblCreatedBy
             // 
             this.lblCreatedBy.AutoSize = true;
-            this.lblCreatedBy.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCreatedBy.Location = new System.Drawing.Point(328, 229);
-            this.lblCreatedBy.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCreatedBy.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.lblCreatedBy.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(23)))), ((int)(((byte)(42)))));
+            this.lblCreatedBy.Location = new System.Drawing.Point(212, 200);
             this.lblCreatedBy.Name = "lblCreatedBy";
-            this.lblCreatedBy.Size = new System.Drawing.Size(26, 22);
+            this.lblCreatedBy.Size = new System.Drawing.Size(40, 17);
             this.lblCreatedBy.TabIndex = 94;
-            this.lblCreatedBy.Text = "??";
+            this.lblCreatedBy.Text = "[????]";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft YaHei", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(29, 174);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(85)))), ((int)(((byte)(105)))));
+            this.label7.Location = new System.Drawing.Point(36, 160);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(192, 28);
+            this.label7.Size = new System.Drawing.Size(114, 17);
             this.label7.TabIndex = 90;
             this.label7.Text = "Application Fees:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(29, 24);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(85)))), ((int)(((byte)(105)))));
+            this.label2.Location = new System.Drawing.Point(36, 40);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(210, 28);
+            this.label2.Size = new System.Drawing.Size(125, 17);
             this.label2.TabIndex = 86;
             this.label2.Text = "D.L.Application ID:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft YaHei", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(29, 74);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(85)))), ((int)(((byte)(105)))));
+            this.label3.Location = new System.Drawing.Point(36, 80);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(196, 28);
+            this.label3.Size = new System.Drawing.Size(116, 17);
             this.label3.TabIndex = 87;
             this.label3.Text = "Application Date:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft YaHei", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(29, 124);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(85)))), ((int)(((byte)(105)))));
+            this.label4.Location = new System.Drawing.Point(36, 120);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(152, 28);
+            this.label4.Size = new System.Drawing.Size(92, 17);
             this.label4.TabIndex = 88;
             this.label4.Text = "License Class:";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft YaHei", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(29, 224);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(85)))), ((int)(((byte)(105)))));
+            this.label6.Location = new System.Drawing.Point(36, 200);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(132, 28);
+            this.label6.Size = new System.Drawing.Size(78, 17);
             this.label6.TabIndex = 89;
             this.label6.Text = "Created By:";
             // 
             // lblLocalDrivingLicenseApplication
             // 
-            this.lblLocalDrivingLicenseApplication.AutoSize = true;
-            this.lblLocalDrivingLicenseApplication.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLocalDrivingLicenseApplication.ForeColor = System.Drawing.Color.Chocolate;
-            this.lblLocalDrivingLicenseApplication.Location = new System.Drawing.Point(255, 27);
+            this.lblLocalDrivingLicenseApplication.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
+            this.lblLocalDrivingLicenseApplication.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(23)))), ((int)(((byte)(42)))));
+            this.lblLocalDrivingLicenseApplication.Location = new System.Drawing.Point(12, 12);
             this.lblLocalDrivingLicenseApplication.Name = "lblLocalDrivingLicenseApplication";
-            this.lblLocalDrivingLicenseApplication.Size = new System.Drawing.Size(548, 33);
+            this.lblLocalDrivingLicenseApplication.Size = new System.Drawing.Size(988, 38);
             this.lblLocalDrivingLicenseApplication.TabIndex = 1;
             this.lblLocalDrivingLicenseApplication.Text = "New Local Driving License Application";
+            this.lblLocalDrivingLicenseApplication.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnSave
             // 
-            this.btnSave.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(132)))), ((int)(((byte)(199)))));
+            this.btnSave.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSave.FlatAppearance.BorderSize = 0;
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSave.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.btnSave.ForeColor = System.Drawing.Color.White;
             this.btnSave.Image = global::UserInterfaceLayer.Properties.Resources.Save_32;
             this.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSave.Location = new System.Drawing.Point(917, 574);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSave.Location = new System.Drawing.Point(985, 648);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(113, 37);
+            this.btnSave.Padding = new System.Windows.Forms.Padding(6, 0, 8, 0);
+            this.btnSave.Size = new System.Drawing.Size(120, 38);
             this.btnSave.TabIndex = 43;
             this.btnSave.Text = "Save";
             this.btnSave.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -320,15 +321,18 @@
             // 
             // btnClose
             // 
-            this.btnClose.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(245)))), ((int)(((byte)(249)))));
+            this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnClose.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(213)))), ((int)(((byte)(225)))));
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClose.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClose.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.btnClose.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(65)))), ((int)(((byte)(85)))));
             this.btnClose.Image = global::UserInterfaceLayer.Properties.Resources.Close_32;
             this.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnClose.Location = new System.Drawing.Point(796, 574);
-            this.btnClose.Margin = new System.Windows.Forms.Padding(4);
+            this.btnClose.Location = new System.Drawing.Point(855, 648);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(113, 37);
+            this.btnClose.Padding = new System.Windows.Forms.Padding(6, 0, 8, 0);
+            this.btnClose.Size = new System.Drawing.Size(120, 38);
             this.btnClose.TabIndex = 42;
             this.btnClose.Text = "Close";
             this.btnClose.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -338,13 +342,19 @@
             // frmNewLocalDrivingLicenseApplication
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(1046, 626);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(1121, 697);
             this.Controls.Add(this.lblLocalDrivingLicenseApplication);
             this.Controls.Add(this.tcApplication);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.btnClose);
+            this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmNewLocalDrivingLicenseApplication";
-            this.Text = "NewLocalDrivingLicenseApplication";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.Text = "New Local Driving License Application";
             this.Load += new System.EventHandler(this.frmNewLocalDrivingLicenseApplication_Load);
             this.tcApplication.ResumeLayout(false);
             this.tpPersonalInfo.ResumeLayout(false);
@@ -356,7 +366,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 

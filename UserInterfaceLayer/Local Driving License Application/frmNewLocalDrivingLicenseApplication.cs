@@ -108,9 +108,10 @@ namespace UserInterfaceLayer.Local_Driving_License_Application
 
         }
 
-        private void _PopulateBaseApplicationObject()
+        private void _PopulateBaseApplicationObject(int personID)
         {
-            _baseApplication.ApplicantPersonID = ctrlPersonFinder.ReturnPersonID;
+            // 🌟 تعيين رقم الشخص المرتبط بهذا الطلب
+            _baseApplication.ApplicantPersonID = personID;
             _baseApplication.CreatedByUserID = clsGlobal.CurrentUser.UserID;
             _baseApplication.ApplicationTypeID = _LocalDrivingLicenseApplicationTypeID;
             // 🎯 التعديل: التواريخ والحالة والرسوم يتم تعيينهم فقط عند إنشاء طلب جديد
@@ -172,13 +173,13 @@ namespace UserInterfaceLayer.Local_Driving_License_Application
             }
 
             int selectedLicenseClassID = Convert.ToInt32(cbLicenseClasses.SelectedValue);
-            int currentPersonID = ctrlPersonFinder.ReturnPersonID;
+            int currentPersonID = ctrlPersonFinder.PersonID;
 
             if (!_ValidateApplicationRequirements(currentPersonID, selectedLicenseClassID))
                 return;
             if (_baseApplication.Mode == clsApplications.enMode.AddNew)
             {
-                _PopulateBaseApplicationObject();
+                _PopulateBaseApplicationObject(currentPersonID);
             }
 
             // Guard Clause: Save parent application first

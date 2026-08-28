@@ -48,15 +48,11 @@ namespace UserInterfaceLayer.Application_Type
             int applicationTypeID = (int)dgvApplicationTypes.CurrentRow.Cells["ApplicationTypeID"].Value;
 
             frmUpdateApplicationType frm = new frmUpdateApplicationType(applicationTypeID);
+            frm.ApplicationTypeUpdated += _RefreshPersonList;
             frm.ShowDialog();
-            _RefreshPersonList();
-            _LayoutDataGridView();
+
         }
 
-        private void btnClose_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
 
 
         private void frmManageApplicationTypes_Load(object sender, EventArgs e)
@@ -64,5 +60,10 @@ namespace UserInterfaceLayer.Application_Type
             _RefreshPersonList();
             _LayoutDataGridView();
         }
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
     }
 }

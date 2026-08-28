@@ -82,8 +82,151 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             this.SuspendLayout();
             // 
+            // groupBox1
+            // 
+            this.groupBox1.BackColor = System.Drawing.Color.White;
+            this.groupBox1.Controls.Add(this.llShowLicenseInfo);
+            this.groupBox1.Controls.Add(this.lblPassedTestsCount);
+            this.groupBox1.Controls.Add(this.lblAppliedForLicenseClass);
+            this.groupBox1.Controls.Add(this.lblLocalDrivingLicenseAppID);
+            this.groupBox1.Controls.Add(this.pictureBox9);
+            this.groupBox1.Controls.Add(this.pictureBox10);
+            this.groupBox1.Controls.Add(this.pictureBox11);
+            this.groupBox1.Controls.Add(this.label21);
+            this.groupBox1.Controls.Add(this.label22);
+            this.groupBox1.Controls.Add(this.pictureBox12);
+            this.groupBox1.Controls.Add(this.label23);
+            this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(23)))), ((int)(((byte)(42)))));
+            this.groupBox1.Location = new System.Drawing.Point(4, 4);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(860, 115);
+            this.groupBox1.TabIndex = 0;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Driving License Application Info";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.label23.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(85)))), ((int)(((byte)(105)))));
+            this.label23.Location = new System.Drawing.Point(16, 32);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(77, 17);
+            this.label23.TabIndex = 111;
+            this.label23.Text = "D.L.App ID:";
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.Image = global::UserInterfaceLayer.Properties.Resources.Number_32;
+            this.pictureBox11.Location = new System.Drawing.Point(110, 29);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(22, 22);
+            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox11.TabIndex = 116;
+            this.pictureBox11.TabStop = false;
+            // 
+            // lblLocalDrivingLicenseAppID
+            // 
+            this.lblLocalDrivingLicenseAppID.AutoSize = true;
+            this.lblLocalDrivingLicenseAppID.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.lblLocalDrivingLicenseAppID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(132)))), ((int)(((byte)(199)))));
+            this.lblLocalDrivingLicenseAppID.Location = new System.Drawing.Point(140, 32);
+            this.lblLocalDrivingLicenseAppID.Name = "lblLocalDrivingLicenseAppID";
+            this.lblLocalDrivingLicenseAppID.Size = new System.Drawing.Size(40, 17);
+            this.lblLocalDrivingLicenseAppID.TabIndex = 119;
+            this.lblLocalDrivingLicenseAppID.Text = "[????]";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.label22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(85)))), ((int)(((byte)(105)))));
+            this.label22.Location = new System.Drawing.Point(360, 32);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(135, 17);
+            this.label22.TabIndex = 112;
+            this.label22.Text = "Applied For License:";
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.Image = global::UserInterfaceLayer.Properties.Resources.Number_32;
+            this.pictureBox10.Location = new System.Drawing.Point(505, 29);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(22, 22);
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox10.TabIndex = 117;
+            this.pictureBox10.TabStop = false;
+            // 
+            // lblAppliedForLicenseClass
+            // 
+            this.lblAppliedForLicenseClass.AutoSize = true;
+            this.lblAppliedForLicenseClass.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.lblAppliedForLicenseClass.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(23)))), ((int)(((byte)(42)))));
+            this.lblAppliedForLicenseClass.Location = new System.Drawing.Point(535, 32);
+            this.lblAppliedForLicenseClass.Name = "lblAppliedForLicenseClass";
+            this.lblAppliedForLicenseClass.Size = new System.Drawing.Size(40, 17);
+            this.lblAppliedForLicenseClass.TabIndex = 120;
+            this.lblAppliedForLicenseClass.Text = "[????]";
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Image = global::UserInterfaceLayer.Properties.Resources.ApplicationType;
+            this.pictureBox9.Location = new System.Drawing.Point(110, 69);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(22, 22);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox9.TabIndex = 118;
+            this.pictureBox9.TabStop = false;
+            // 
+            // llShowLicenseInfo
+            // 
+            this.llShowLicenseInfo.AutoSize = true;
+            this.llShowLicenseInfo.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.llShowLicenseInfo.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
+            this.llShowLicenseInfo.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(132)))), ((int)(((byte)(199)))));
+            this.llShowLicenseInfo.Location = new System.Drawing.Point(140, 72);
+            this.llShowLicenseInfo.Name = "llShowLicenseInfo";
+            this.llShowLicenseInfo.Size = new System.Drawing.Size(120, 17);
+            this.llShowLicenseInfo.TabIndex = 123;
+            this.llShowLicenseInfo.TabStop = true;
+            this.llShowLicenseInfo.Text = "Show License Info";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.label21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(85)))), ((int)(((byte)(105)))));
+            this.label21.Location = new System.Drawing.Point(360, 72);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(91, 17);
+            this.label21.TabIndex = 113;
+            this.label21.Text = "Passed Tests:";
+            // 
+            // pictureBox12
+            // 
+            this.pictureBox12.Image = global::UserInterfaceLayer.Properties.Resources.PassedTests_32;
+            this.pictureBox12.Location = new System.Drawing.Point(505, 69);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(22, 22);
+            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox12.TabIndex = 115;
+            this.pictureBox12.TabStop = false;
+            // 
+            // lblPassedTestsCount
+            // 
+            this.lblPassedTestsCount.AutoSize = true;
+            this.lblPassedTestsCount.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.lblPassedTestsCount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(23)))), ((int)(((byte)(42)))));
+            this.lblPassedTestsCount.Location = new System.Drawing.Point(535, 72);
+            this.lblPassedTestsCount.Name = "lblPassedTestsCount";
+            this.lblPassedTestsCount.Size = new System.Drawing.Size(40, 17);
+            this.lblPassedTestsCount.TabIndex = 121;
+            this.lblPassedTestsCount.Text = "[????]";
+            // 
             // groupBox2
             // 
+            this.groupBox2.BackColor = System.Drawing.Color.White;
             this.groupBox2.Controls.Add(this.llViewPersonInfo);
             this.groupBox2.Controls.Add(this.lblCreatedByUserName);
             this.groupBox2.Controls.Add(this.lblStatusDate);
@@ -109,439 +252,293 @@
             this.groupBox2.Controls.Add(this.pictureBox3);
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Controls.Add(this.pictureBox2);
-            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(3, 174);
+            this.groupBox2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.groupBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(23)))), ((int)(((byte)(42)))));
+            this.groupBox2.Location = new System.Drawing.Point(4, 125);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(788, 227);
-            this.groupBox2.TabIndex = 5;
+            this.groupBox2.Size = new System.Drawing.Size(860, 220);
+            this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Application Basic Info";
             // 
-            // llViewPersonInfo
+            // label1
             // 
-            this.llViewPersonInfo.AutoSize = true;
-            this.llViewPersonInfo.Location = new System.Drawing.Point(602, 181);
-            this.llViewPersonInfo.Name = "llViewPersonInfo";
-            this.llViewPersonInfo.Size = new System.Drawing.Size(129, 20);
-            this.llViewPersonInfo.TabIndex = 122;
-            this.llViewPersonInfo.TabStop = true;
-            this.llViewPersonInfo.Text = "View Person Info";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(85)))), ((int)(((byte)(105)))));
+            this.label1.Location = new System.Drawing.Point(16, 30);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(26, 17);
+            this.label1.TabIndex = 77;
+            this.label1.Text = "ID:";
             // 
-            // lblCreatedByUserName
+            // pictureBox1
             // 
-            this.lblCreatedByUserName.AutoSize = true;
-            this.lblCreatedByUserName.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCreatedByUserName.Location = new System.Drawing.Point(656, 119);
-            this.lblCreatedByUserName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblCreatedByUserName.Name = "lblCreatedByUserName";
-            this.lblCreatedByUserName.Size = new System.Drawing.Size(40, 22);
-            this.lblCreatedByUserName.TabIndex = 121;
-            this.lblCreatedByUserName.Text = "؟؟؟";
+            this.pictureBox1.Image = global::UserInterfaceLayer.Properties.Resources.Number_32;
+            this.pictureBox1.Location = new System.Drawing.Point(110, 27);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(22, 22);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 96;
+            this.pictureBox1.TabStop = false;
             // 
-            // lblStatusDate
+            // lblApplicationID
             // 
-            this.lblStatusDate.AutoSize = true;
-            this.lblStatusDate.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStatusDate.Location = new System.Drawing.Point(656, 84);
-            this.lblStatusDate.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblStatusDate.Name = "lblStatusDate";
-            this.lblStatusDate.Size = new System.Drawing.Size(40, 22);
-            this.lblStatusDate.TabIndex = 120;
-            this.lblStatusDate.Text = "؟؟؟";
+            this.lblApplicationID.AutoSize = true;
+            this.lblApplicationID.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.lblApplicationID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(132)))), ((int)(((byte)(199)))));
+            this.lblApplicationID.Location = new System.Drawing.Point(140, 30);
+            this.lblApplicationID.Name = "lblApplicationID";
+            this.lblApplicationID.Size = new System.Drawing.Size(40, 17);
+            this.lblApplicationID.TabIndex = 108;
+            this.lblApplicationID.Text = "[????]";
             // 
-            // lblApplicationDate
+            // label2
             // 
-            this.lblApplicationDate.AutoSize = true;
-            this.lblApplicationDate.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblApplicationDate.Location = new System.Drawing.Point(656, 49);
-            this.lblApplicationDate.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblApplicationDate.Name = "lblApplicationDate";
-            this.lblApplicationDate.Size = new System.Drawing.Size(40, 22);
-            this.lblApplicationDate.TabIndex = 119;
-            this.lblApplicationDate.Text = "؟؟؟";
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(85)))), ((int)(((byte)(105)))));
+            this.label2.Location = new System.Drawing.Point(16, 66);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(50, 17);
+            this.label2.TabIndex = 78;
+            this.label2.Text = "Status:";
             // 
-            // pictureBox6
+            // pictureBox4
             // 
-            this.pictureBox6.Image = global::UserInterfaceLayer.Properties.Resources.Calendar_32;
-            this.pictureBox6.Location = new System.Drawing.Point(606, 80);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(32, 26);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 118;
-            this.pictureBox6.TabStop = false;
+            this.pictureBox4.Image = global::UserInterfaceLayer.Properties.Resources.Number_32;
+            this.pictureBox4.Location = new System.Drawing.Point(110, 63);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(22, 22);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 97;
+            this.pictureBox4.TabStop = false;
             // 
-            // label6
+            // lblApplicationStatus
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(495, 119);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(103, 22);
-            this.label6.TabIndex = 116;
-            this.label6.Text = "Created By:";
+            this.lblApplicationStatus.AutoSize = true;
+            this.lblApplicationStatus.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.lblApplicationStatus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(23)))), ((int)(((byte)(42)))));
+            this.lblApplicationStatus.Location = new System.Drawing.Point(140, 66);
+            this.lblApplicationStatus.Name = "lblApplicationStatus";
+            this.lblApplicationStatus.Size = new System.Drawing.Size(40, 17);
+            this.lblApplicationStatus.TabIndex = 109;
+            this.lblApplicationStatus.Text = "[????]";
             // 
-            // label7
+            // label3
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(489, 84);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(109, 22);
-            this.label7.TabIndex = 114;
-            this.label7.Text = "Status Date:";
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(85)))), ((int)(((byte)(105)))));
+            this.label3.Location = new System.Drawing.Point(16, 102);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(39, 17);
+            this.label3.TabIndex = 79;
+            this.label3.Text = "Fees:";
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::UserInterfaceLayer.Properties.Resources.money_32;
+            this.pictureBox3.Location = new System.Drawing.Point(110, 99);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(22, 22);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 90;
+            this.pictureBox3.TabStop = false;
+            // 
+            // lblApplicationFees
+            // 
+            this.lblApplicationFees.AutoSize = true;
+            this.lblApplicationFees.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.lblApplicationFees.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(163)))), ((int)(((byte)(74)))));
+            this.lblApplicationFees.Location = new System.Drawing.Point(140, 102);
+            this.lblApplicationFees.Name = "lblApplicationFees";
+            this.lblApplicationFees.Size = new System.Drawing.Size(40, 17);
+            this.lblApplicationFees.TabIndex = 110;
+            this.lblApplicationFees.Text = "[????]";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(85)))), ((int)(((byte)(105)))));
+            this.label4.Location = new System.Drawing.Point(16, 138);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(41, 17);
+            this.label4.TabIndex = 80;
+            this.label4.Text = "Type:";
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::UserInterfaceLayer.Properties.Resources.ApplicationType;
+            this.pictureBox5.Location = new System.Drawing.Point(110, 135);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(22, 22);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 98;
+            this.pictureBox5.TabStop = false;
+            // 
+            // lblApplicationType
+            // 
+            this.lblApplicationType.AutoSize = true;
+            this.lblApplicationType.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.lblApplicationType.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(23)))), ((int)(((byte)(42)))));
+            this.lblApplicationType.Location = new System.Drawing.Point(140, 138);
+            this.lblApplicationType.Name = "lblApplicationType";
+            this.lblApplicationType.Size = new System.Drawing.Size(40, 17);
+            this.lblApplicationType.TabIndex = 111;
+            this.lblApplicationType.Text = "[????]";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(85)))), ((int)(((byte)(105)))));
+            this.label9.Location = new System.Drawing.Point(16, 174);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(71, 17);
+            this.label9.TabIndex = 85;
+            this.label9.Text = "Applicant:";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::UserInterfaceLayer.Properties.Resources.Person_32;
+            this.pictureBox2.Location = new System.Drawing.Point(110, 171);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(22, 22);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 83;
+            this.pictureBox2.TabStop = false;
+            // 
+            // lblApplicantFullName
+            // 
+            this.lblApplicantFullName.AutoSize = true;
+            this.lblApplicantFullName.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.lblApplicantFullName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.lblApplicantFullName.Location = new System.Drawing.Point(140, 174);
+            this.lblApplicantFullName.Name = "lblApplicantFullName";
+            this.lblApplicantFullName.Size = new System.Drawing.Size(44, 17);
+            this.lblApplicantFullName.TabIndex = 112;
+            this.lblApplicantFullName.Text = "[????]";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(545, 49);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(85)))), ((int)(((byte)(105)))));
+            this.label8.Location = new System.Drawing.Point(480, 30);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(53, 22);
+            this.label8.Size = new System.Drawing.Size(41, 17);
             this.label8.TabIndex = 113;
             this.label8.Text = "Date:";
             // 
             // pictureBox7
             // 
             this.pictureBox7.Image = global::UserInterfaceLayer.Properties.Resources.Calendar_32;
-            this.pictureBox7.Location = new System.Drawing.Point(606, 45);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox7.Location = new System.Drawing.Point(575, 27);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(32, 26);
+            this.pictureBox7.Size = new System.Drawing.Size(22, 22);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox7.TabIndex = 117;
             this.pictureBox7.TabStop = false;
             // 
+            // lblApplicationDate
+            // 
+            this.lblApplicationDate.AutoSize = true;
+            this.lblApplicationDate.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.lblApplicationDate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(23)))), ((int)(((byte)(42)))));
+            this.lblApplicationDate.Location = new System.Drawing.Point(605, 30);
+            this.lblApplicationDate.Name = "lblApplicationDate";
+            this.lblApplicationDate.Size = new System.Drawing.Size(40, 17);
+            this.lblApplicationDate.TabIndex = 119;
+            this.lblApplicationDate.Text = "[????]";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(85)))), ((int)(((byte)(105)))));
+            this.label7.Location = new System.Drawing.Point(480, 66);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(83, 17);
+            this.label7.TabIndex = 114;
+            this.label7.Text = "Status Date:";
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = global::UserInterfaceLayer.Properties.Resources.Calendar_32;
+            this.pictureBox6.Location = new System.Drawing.Point(575, 63);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(22, 22);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 118;
+            this.pictureBox6.TabStop = false;
+            // 
+            // lblStatusDate
+            // 
+            this.lblStatusDate.AutoSize = true;
+            this.lblStatusDate.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.lblStatusDate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(23)))), ((int)(((byte)(42)))));
+            this.lblStatusDate.Location = new System.Drawing.Point(605, 66);
+            this.lblStatusDate.Name = "lblStatusDate";
+            this.lblStatusDate.Size = new System.Drawing.Size(40, 17);
+            this.lblStatusDate.TabIndex = 120;
+            this.lblStatusDate.Text = "[????]";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(85)))), ((int)(((byte)(105)))));
+            this.label6.Location = new System.Drawing.Point(480, 102);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(79, 17);
+            this.label6.TabIndex = 116;
+            this.label6.Text = "Created By:";
+            // 
             // pictureBox8
             // 
             this.pictureBox8.Image = global::UserInterfaceLayer.Properties.Resources.User_32__2;
-            this.pictureBox8.Location = new System.Drawing.Point(606, 115);
-            this.pictureBox8.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox8.Location = new System.Drawing.Point(575, 99);
             this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(32, 26);
+            this.pictureBox8.Size = new System.Drawing.Size(22, 22);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox8.TabIndex = 115;
             this.pictureBox8.TabStop = false;
             // 
-            // lblApplicantFullName
+            // lblCreatedByUserName
             // 
-            this.lblApplicantFullName.AutoSize = true;
-            this.lblApplicantFullName.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblApplicantFullName.Location = new System.Drawing.Point(163, 189);
-            this.lblApplicantFullName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblApplicantFullName.Name = "lblApplicantFullName";
-            this.lblApplicantFullName.Size = new System.Drawing.Size(50, 22);
-            this.lblApplicantFullName.TabIndex = 112;
-            this.lblApplicantFullName.Text = "؟؟؟؟";
+            this.lblCreatedByUserName.AutoSize = true;
+            this.lblCreatedByUserName.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.lblCreatedByUserName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(23)))), ((int)(((byte)(42)))));
+            this.lblCreatedByUserName.Location = new System.Drawing.Point(605, 102);
+            this.lblCreatedByUserName.Name = "lblCreatedByUserName";
+            this.lblCreatedByUserName.Size = new System.Drawing.Size(40, 17);
+            this.lblCreatedByUserName.TabIndex = 121;
+            this.lblCreatedByUserName.Text = "[????]";
             // 
-            // lblApplicationType
+            // llViewPersonInfo
             // 
-            this.lblApplicationType.AutoSize = true;
-            this.lblApplicationType.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblApplicationType.Location = new System.Drawing.Point(163, 154);
-            this.lblApplicationType.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblApplicationType.Name = "lblApplicationType";
-            this.lblApplicationType.Size = new System.Drawing.Size(50, 22);
-            this.lblApplicationType.TabIndex = 111;
-            this.lblApplicationType.Text = "؟؟؟؟";
-            // 
-            // lblApplicationFees
-            // 
-            this.lblApplicationFees.AutoSize = true;
-            this.lblApplicationFees.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblApplicationFees.Location = new System.Drawing.Point(163, 119);
-            this.lblApplicationFees.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblApplicationFees.Name = "lblApplicationFees";
-            this.lblApplicationFees.Size = new System.Drawing.Size(50, 22);
-            this.lblApplicationFees.TabIndex = 110;
-            this.lblApplicationFees.Text = "؟؟؟؟";
-            // 
-            // lblApplicationStatus
-            // 
-            this.lblApplicationStatus.AutoSize = true;
-            this.lblApplicationStatus.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblApplicationStatus.Location = new System.Drawing.Point(163, 84);
-            this.lblApplicationStatus.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblApplicationStatus.Name = "lblApplicationStatus";
-            this.lblApplicationStatus.Size = new System.Drawing.Size(50, 22);
-            this.lblApplicationStatus.TabIndex = 109;
-            this.lblApplicationStatus.Text = "؟؟؟؟";
-            // 
-            // lblApplicationID
-            // 
-            this.lblApplicationID.AutoSize = true;
-            this.lblApplicationID.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblApplicationID.Location = new System.Drawing.Point(163, 49);
-            this.lblApplicationID.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblApplicationID.Name = "lblApplicationID";
-            this.lblApplicationID.Size = new System.Drawing.Size(50, 22);
-            this.lblApplicationID.TabIndex = 108;
-            this.lblApplicationID.Text = "؟؟؟؟";
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = global::UserInterfaceLayer.Properties.Resources.ApplicationType;
-            this.pictureBox5.Location = new System.Drawing.Point(123, 150);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(32, 26);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 98;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::UserInterfaceLayer.Properties.Resources.Number_32;
-            this.pictureBox4.Location = new System.Drawing.Point(123, 80);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(32, 26);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 97;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::UserInterfaceLayer.Properties.Resources.Number_32;
-            this.pictureBox1.Location = new System.Drawing.Point(123, 45);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(32, 26);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 96;
-            this.pictureBox1.TabStop = false;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(22, 189);
-            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(93, 22);
-            this.label9.TabIndex = 85;
-            this.label9.Text = "Applicant:";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(61, 150);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(54, 22);
-            this.label4.TabIndex = 80;
-            this.label4.Text = "Type:";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(65, 119);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(50, 22);
-            this.label3.TabIndex = 79;
-            this.label3.Text = "Fees:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(49, 84);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(66, 22);
-            this.label2.TabIndex = 78;
-            this.label2.Text = "Status:";
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::UserInterfaceLayer.Properties.Resources.money_32;
-            this.pictureBox3.Location = new System.Drawing.Point(123, 115);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(32, 26);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 90;
-            this.pictureBox3.TabStop = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(65, 49);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(33, 22);
-            this.label1.TabIndex = 77;
-            this.label1.Text = "ID:";
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::UserInterfaceLayer.Properties.Resources.Person_32;
-            this.pictureBox2.Location = new System.Drawing.Point(123, 185);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(32, 26);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 83;
-            this.pictureBox2.TabStop = false;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.llShowLicenseInfo);
-            this.groupBox1.Controls.Add(this.lblPassedTestsCount);
-            this.groupBox1.Controls.Add(this.lblAppliedForLicenseClass);
-            this.groupBox1.Controls.Add(this.lblLocalDrivingLicenseAppID);
-            this.groupBox1.Controls.Add(this.pictureBox9);
-            this.groupBox1.Controls.Add(this.pictureBox10);
-            this.groupBox1.Controls.Add(this.pictureBox11);
-            this.groupBox1.Controls.Add(this.label21);
-            this.groupBox1.Controls.Add(this.label22);
-            this.groupBox1.Controls.Add(this.pictureBox12);
-            this.groupBox1.Controls.Add(this.label23);
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(3, 3);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(788, 165);
-            this.groupBox1.TabIndex = 4;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Driving License Application Info";
-            // 
-            // llShowLicenseInfo
-            // 
-            this.llShowLicenseInfo.AutoSize = true;
-            this.llShowLicenseInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.llShowLicenseInfo.LinkColor = System.Drawing.Color.Silver;
-            this.llShowLicenseInfo.Location = new System.Drawing.Point(163, 82);
-            this.llShowLicenseInfo.Name = "llShowLicenseInfo";
-            this.llShowLicenseInfo.Size = new System.Drawing.Size(204, 25);
-            this.llShowLicenseInfo.TabIndex = 123;
-            this.llShowLicenseInfo.TabStop = true;
-            this.llShowLicenseInfo.Text = "Show License Info";
-            // 
-            // lblPassedTestsCount
-            // 
-            this.lblPassedTestsCount.AutoSize = true;
-            this.lblPassedTestsCount.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPassedTestsCount.Location = new System.Drawing.Point(589, 76);
-            this.lblPassedTestsCount.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblPassedTestsCount.Name = "lblPassedTestsCount";
-            this.lblPassedTestsCount.Size = new System.Drawing.Size(50, 22);
-            this.lblPassedTestsCount.TabIndex = 121;
-            this.lblPassedTestsCount.Text = "؟؟؟؟";
-            // 
-            // lblAppliedForLicenseClass
-            // 
-            this.lblAppliedForLicenseClass.AutoSize = true;
-            this.lblAppliedForLicenseClass.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAppliedForLicenseClass.Location = new System.Drawing.Point(589, 39);
-            this.lblAppliedForLicenseClass.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblAppliedForLicenseClass.Name = "lblAppliedForLicenseClass";
-            this.lblAppliedForLicenseClass.Size = new System.Drawing.Size(50, 22);
-            this.lblAppliedForLicenseClass.TabIndex = 120;
-            this.lblAppliedForLicenseClass.Text = "؟؟؟؟";
-            // 
-            // lblLocalDrivingLicenseAppID
-            // 
-            this.lblLocalDrivingLicenseAppID.AutoSize = true;
-            this.lblLocalDrivingLicenseAppID.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLocalDrivingLicenseAppID.Location = new System.Drawing.Point(163, 39);
-            this.lblLocalDrivingLicenseAppID.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblLocalDrivingLicenseAppID.Name = "lblLocalDrivingLicenseAppID";
-            this.lblLocalDrivingLicenseAppID.Size = new System.Drawing.Size(50, 22);
-            this.lblLocalDrivingLicenseAppID.TabIndex = 119;
-            this.lblLocalDrivingLicenseAppID.Text = "؟؟؟؟";
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.Image = global::UserInterfaceLayer.Properties.Resources.ApplicationType;
-            this.pictureBox9.Location = new System.Drawing.Point(123, 76);
-            this.pictureBox9.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(32, 31);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox9.TabIndex = 118;
-            this.pictureBox9.TabStop = false;
-            // 
-            // pictureBox10
-            // 
-            this.pictureBox10.Image = global::UserInterfaceLayer.Properties.Resources.Number_32;
-            this.pictureBox10.Location = new System.Drawing.Point(549, 35);
-            this.pictureBox10.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(32, 26);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox10.TabIndex = 117;
-            this.pictureBox10.TabStop = false;
-            // 
-            // pictureBox11
-            // 
-            this.pictureBox11.Image = global::UserInterfaceLayer.Properties.Resources.Number_32;
-            this.pictureBox11.Location = new System.Drawing.Point(123, 35);
-            this.pictureBox11.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(32, 26);
-            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox11.TabIndex = 116;
-            this.pictureBox11.TabStop = false;
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(423, 76);
-            this.label21.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(118, 22);
-            this.label21.TabIndex = 113;
-            this.label21.Text = "Passed Tests:";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(367, 39);
-            this.label22.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(174, 22);
-            this.label22.TabIndex = 112;
-            this.label22.Text = "Applied For License:";
-            // 
-            // pictureBox12
-            // 
-            this.pictureBox12.Image = global::UserInterfaceLayer.Properties.Resources.PassedTests_32;
-            this.pictureBox12.Location = new System.Drawing.Point(549, 72);
-            this.pictureBox12.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(32, 26);
-            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox12.TabIndex = 115;
-            this.pictureBox12.TabStop = false;
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(22, 39);
-            this.label23.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(99, 22);
-            this.label23.TabIndex = 111;
-            this.label23.Text = "D.LApp ID:";
+            this.llViewPersonInfo.AutoSize = true;
+            this.llViewPersonInfo.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.llViewPersonInfo.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
+            this.llViewPersonInfo.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(132)))), ((int)(((byte)(199)))));
+            this.llViewPersonInfo.Location = new System.Drawing.Point(605, 174);
+            this.llViewPersonInfo.Name = "llViewPersonInfo";
+            this.llViewPersonInfo.Size = new System.Drawing.Size(109, 17);
+            this.llViewPersonInfo.TabIndex = 122;
+            this.llViewPersonInfo.TabStop = true;
+            this.llViewPersonInfo.Text = "View Person Info";
             // 
             // ctrlLicenseApplicationInInfoCard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "ctrlLicenseApplicationInInfoCard";
-            this.Size = new System.Drawing.Size(798, 410);
+            this.Size = new System.Drawing.Size(870, 350);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();

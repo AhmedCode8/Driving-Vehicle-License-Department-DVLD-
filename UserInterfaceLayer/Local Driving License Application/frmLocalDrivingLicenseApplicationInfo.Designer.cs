@@ -34,16 +34,19 @@
             // 
             // btnClose
             // 
-            this.btnClose.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(245)))), ((int)(((byte)(249)))));
+            this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnClose.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(213)))), ((int)(((byte)(225)))));
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClose.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClose.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.btnClose.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(65)))), ((int)(((byte)(85)))));
             this.btnClose.Image = global::UserInterfaceLayer.Properties.Resources.Close_32;
             this.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnClose.Location = new System.Drawing.Point(684, 425);
-            this.btnClose.Margin = new System.Windows.Forms.Padding(4);
+            this.btnClose.Location = new System.Drawing.Point(899, 423);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(113, 37);
-            this.btnClose.TabIndex = 97;
+            this.btnClose.Padding = new System.Windows.Forms.Padding(6, 0, 8, 0);
+            this.btnClose.Size = new System.Drawing.Size(120, 38);
+            this.btnClose.TabIndex = 1;
             this.btnClose.Text = "Close";
             this.btnClose.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnClose.UseVisualStyleBackColor = false;
@@ -51,18 +54,25 @@
             // 
             // ctrlLicenseApplicationInInfoCard1
             // 
+            this.ctrlLicenseApplicationInInfoCard1.BackColor = System.Drawing.Color.White;
             this.ctrlLicenseApplicationInInfoCard1.Location = new System.Drawing.Point(12, 12);
             this.ctrlLicenseApplicationInInfoCard1.Name = "ctrlLicenseApplicationInInfoCard1";
-            this.ctrlLicenseApplicationInInfoCard1.Size = new System.Drawing.Size(798, 410);
-            this.ctrlLicenseApplicationInInfoCard1.TabIndex = 98;
+            this.ctrlLicenseApplicationInInfoCard1.Size = new System.Drawing.Size(1019, 405);
+            this.ctrlLicenseApplicationInInfoCard1.TabIndex = 0;
             // 
             // frmLocalDrivingLicenseApplicationInfo
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(821, 481);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(1030, 472);
             this.Controls.Add(this.ctrlLicenseApplicationInInfoCard1);
             this.Controls.Add(this.btnClose);
+            this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmLocalDrivingLicenseApplicationInfo";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Local Driving License Application Info";
             this.Load += new System.EventHandler(this.frmLocalDrivingLicenseApplicationInfo_Load);
             this.ResumeLayout(false);

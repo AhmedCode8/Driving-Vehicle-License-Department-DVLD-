@@ -84,6 +84,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.White;
             this.groupBox1.Controls.Add(this.pbDriverImage);
             this.groupBox1.Controls.Add(this.lblDriverID);
             this.groupBox1.Controls.Add(this.lblExpirationDate);
@@ -121,20 +122,23 @@
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(3, 3);
+            this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(23)))), ((int)(((byte)(42)))));
+            this.groupBox1.Location = new System.Drawing.Point(4, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(921, 336);
+            this.groupBox1.Size = new System.Drawing.Size(928, 335);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Lincese Info";
+            this.groupBox1.Text = "Driver License Information";
             // 
             // pbDriverImage
             // 
+            this.pbDriverImage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
+            this.pbDriverImage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pbDriverImage.Image = global::UserInterfaceLayer.Properties.Resources.Female_512;
-            this.pbDriverImage.Location = new System.Drawing.Point(702, 38);
+            this.pbDriverImage.Location = new System.Drawing.Point(725, 34);
             this.pbDriverImage.Name = "pbDriverImage";
-            this.pbDriverImage.Size = new System.Drawing.Size(194, 179);
+            this.pbDriverImage.Size = new System.Drawing.Size(185, 195);
             this.pbDriverImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbDriverImage.TabIndex = 152;
             this.pbDriverImage.TabStop = false;
@@ -142,129 +146,141 @@
             // lblDriverID
             // 
             this.lblDriverID.AutoSize = true;
-            this.lblDriverID.Font = new System.Drawing.Font("MingLiU_MSCS-ExtB", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDriverID.Location = new System.Drawing.Point(575, 228);
+            this.lblDriverID.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.lblDriverID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(23)))), ((int)(((byte)(42)))));
+            this.lblDriverID.Location = new System.Drawing.Point(535, 214);
             this.lblDriverID.Name = "lblDriverID";
-            this.lblDriverID.Size = new System.Drawing.Size(28, 17);
+            this.lblDriverID.Size = new System.Drawing.Size(40, 17);
             this.lblDriverID.TabIndex = 151;
-            this.lblDriverID.Text = "??";
+            this.lblDriverID.Text = "[????]";
             // 
             // lblExpirationDate
             // 
             this.lblExpirationDate.AutoSize = true;
-            this.lblExpirationDate.Font = new System.Drawing.Font("MingLiU_MSCS-ExtB", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblExpirationDate.Location = new System.Drawing.Point(575, 266);
+            this.lblExpirationDate.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.lblExpirationDate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(23)))), ((int)(((byte)(42)))));
+            this.lblExpirationDate.Location = new System.Drawing.Point(535, 250);
             this.lblExpirationDate.Name = "lblExpirationDate";
-            this.lblExpirationDate.Size = new System.Drawing.Size(28, 17);
+            this.lblExpirationDate.Size = new System.Drawing.Size(40, 17);
             this.lblExpirationDate.TabIndex = 150;
-            this.lblExpirationDate.Text = "??";
+            this.lblExpirationDate.Text = "[????]";
             // 
             // lblNationalNo
             // 
             this.lblNationalNo.AutoSize = true;
-            this.lblNationalNo.Font = new System.Drawing.Font("MingLiU_MSCS-ExtB", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNationalNo.Location = new System.Drawing.Point(235, 152);
+            this.lblNationalNo.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.lblNationalNo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(23)))), ((int)(((byte)(42)))));
+            this.lblNationalNo.Location = new System.Drawing.Point(175, 142);
             this.lblNationalNo.Name = "lblNationalNo";
-            this.lblNationalNo.Size = new System.Drawing.Size(28, 17);
+            this.lblNationalNo.Size = new System.Drawing.Size(40, 17);
             this.lblNationalNo.TabIndex = 149;
-            this.lblNationalNo.Text = "??";
+            this.lblNationalNo.Text = "[????]";
             // 
             // lblIssueDate
             // 
             this.lblIssueDate.AutoSize = true;
-            this.lblIssueDate.Font = new System.Drawing.Font("MingLiU_MSCS-ExtB", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblIssueDate.Location = new System.Drawing.Point(235, 228);
+            this.lblIssueDate.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.lblIssueDate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(23)))), ((int)(((byte)(42)))));
+            this.lblIssueDate.Location = new System.Drawing.Point(175, 214);
             this.lblIssueDate.Name = "lblIssueDate";
-            this.lblIssueDate.Size = new System.Drawing.Size(28, 17);
+            this.lblIssueDate.Size = new System.Drawing.Size(40, 17);
             this.lblIssueDate.TabIndex = 148;
-            this.lblIssueDate.Text = "??";
+            this.lblIssueDate.Text = "[????]";
             // 
             // lblNotes
             // 
             this.lblNotes.AutoSize = true;
-            this.lblNotes.Font = new System.Drawing.Font("MingLiU_MSCS-ExtB", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNotes.Location = new System.Drawing.Point(235, 304);
+            this.lblNotes.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.lblNotes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(23)))), ((int)(((byte)(42)))));
+            this.lblNotes.Location = new System.Drawing.Point(175, 286);
             this.lblNotes.Name = "lblNotes";
-            this.lblNotes.Size = new System.Drawing.Size(28, 17);
+            this.lblNotes.Size = new System.Drawing.Size(40, 17);
             this.lblNotes.TabIndex = 147;
-            this.lblNotes.Text = "??";
+            this.lblNotes.Text = "[????]";
             // 
             // lblIsActive
             // 
             this.lblIsActive.AutoSize = true;
-            this.lblIsActive.Font = new System.Drawing.Font("MingLiU_MSCS-ExtB", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblIsActive.Location = new System.Drawing.Point(575, 152);
+            this.lblIsActive.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.lblIsActive.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(23)))), ((int)(((byte)(42)))));
+            this.lblIsActive.Location = new System.Drawing.Point(535, 142);
             this.lblIsActive.Name = "lblIsActive";
-            this.lblIsActive.Size = new System.Drawing.Size(28, 17);
+            this.lblIsActive.Size = new System.Drawing.Size(40, 17);
             this.lblIsActive.TabIndex = 146;
-            this.lblIsActive.Text = "??";
+            this.lblIsActive.Text = "[????]";
             // 
             // lblIssueReason
             // 
             this.lblIssueReason.AutoSize = true;
-            this.lblIssueReason.Font = new System.Drawing.Font("MingLiU_MSCS-ExtB", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblIssueReason.Location = new System.Drawing.Point(235, 266);
+            this.lblIssueReason.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.lblIssueReason.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(23)))), ((int)(((byte)(42)))));
+            this.lblIssueReason.Location = new System.Drawing.Point(175, 250);
             this.lblIssueReason.Name = "lblIssueReason";
-            this.lblIssueReason.Size = new System.Drawing.Size(28, 17);
+            this.lblIssueReason.Size = new System.Drawing.Size(40, 17);
             this.lblIssueReason.TabIndex = 145;
-            this.lblIssueReason.Text = "??";
+            this.lblIssueReason.Text = "[????]";
             // 
             // lblLicenseID
             // 
             this.lblLicenseID.AutoSize = true;
-            this.lblLicenseID.Font = new System.Drawing.Font("MingLiU_MSCS-ExtB", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLicenseID.Location = new System.Drawing.Point(235, 114);
+            this.lblLicenseID.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.lblLicenseID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(132)))), ((int)(((byte)(199)))));
+            this.lblLicenseID.Location = new System.Drawing.Point(175, 106);
             this.lblLicenseID.Name = "lblLicenseID";
-            this.lblLicenseID.Size = new System.Drawing.Size(28, 17);
+            this.lblLicenseID.Size = new System.Drawing.Size(44, 17);
             this.lblLicenseID.TabIndex = 144;
-            this.lblLicenseID.Text = "??";
+            this.lblLicenseID.Text = "[????]";
             // 
             // lblFullName
             // 
             this.lblFullName.AutoSize = true;
-            this.lblFullName.Font = new System.Drawing.Font("MingLiU_MSCS-ExtB", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFullName.Location = new System.Drawing.Point(235, 76);
+            this.lblFullName.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.lblFullName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.lblFullName.Location = new System.Drawing.Point(175, 70);
             this.lblFullName.Name = "lblFullName";
-            this.lblFullName.Size = new System.Drawing.Size(28, 17);
+            this.lblFullName.Size = new System.Drawing.Size(44, 17);
             this.lblFullName.TabIndex = 143;
-            this.lblFullName.Text = "??";
+            this.lblFullName.Text = "[????]";
             // 
             // lblClass
             // 
             this.lblClass.AutoSize = true;
-            this.lblClass.Font = new System.Drawing.Font("MingLiU_MSCS-ExtB", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblClass.Location = new System.Drawing.Point(235, 38);
+            this.lblClass.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.lblClass.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(23)))), ((int)(((byte)(42)))));
+            this.lblClass.Location = new System.Drawing.Point(175, 34);
             this.lblClass.Name = "lblClass";
-            this.lblClass.Size = new System.Drawing.Size(28, 17);
+            this.lblClass.Size = new System.Drawing.Size(44, 17);
             this.lblClass.TabIndex = 142;
-            this.lblClass.Text = "??";
+            this.lblClass.Text = "[????]";
             // 
             // lblDateOfBirth
             // 
             this.lblDateOfBirth.AutoSize = true;
-            this.lblDateOfBirth.Font = new System.Drawing.Font("MingLiU_MSCS-ExtB", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDateOfBirth.Location = new System.Drawing.Point(575, 190);
+            this.lblDateOfBirth.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.lblDateOfBirth.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(23)))), ((int)(((byte)(42)))));
+            this.lblDateOfBirth.Location = new System.Drawing.Point(535, 178);
             this.lblDateOfBirth.Name = "lblDateOfBirth";
-            this.lblDateOfBirth.Size = new System.Drawing.Size(28, 17);
+            this.lblDateOfBirth.Size = new System.Drawing.Size(40, 17);
             this.lblDateOfBirth.TabIndex = 141;
-            this.lblDateOfBirth.Text = "??";
+            this.lblDateOfBirth.Text = "[????]";
             // 
             // lblGender
             // 
             this.lblGender.AutoSize = true;
-            this.lblGender.Font = new System.Drawing.Font("MingLiU_MSCS-ExtB", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGender.Location = new System.Drawing.Point(235, 190);
+            this.lblGender.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.lblGender.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(23)))), ((int)(((byte)(42)))));
+            this.lblGender.Location = new System.Drawing.Point(175, 178);
             this.lblGender.Name = "lblGender";
-            this.lblGender.Size = new System.Drawing.Size(28, 17);
+            this.lblGender.Size = new System.Drawing.Size(40, 17);
             this.lblGender.TabIndex = 140;
-            this.lblGender.Text = "??";
+            this.lblGender.Text = "[????]";
             // 
             // pictureBox6
             // 
             this.pictureBox6.Image = global::UserInterfaceLayer.Properties.Resources.Calendar_32;
-            this.pictureBox6.Location = new System.Drawing.Point(525, 218);
+            this.pictureBox6.Location = new System.Drawing.Point(500, 211);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(30, 27);
+            this.pictureBox6.Size = new System.Drawing.Size(22, 22);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox6.TabIndex = 139;
             this.pictureBox6.TabStop = false;
@@ -272,9 +288,9 @@
             // pictureBox7
             // 
             this.pictureBox7.Image = global::UserInterfaceLayer.Properties.Resources.Phone_32;
-            this.pictureBox7.Location = new System.Drawing.Point(525, 256);
+            this.pictureBox7.Location = new System.Drawing.Point(500, 247);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(30, 27);
+            this.pictureBox7.Size = new System.Drawing.Size(22, 22);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox7.TabIndex = 138;
             this.pictureBox7.TabStop = false;
@@ -282,9 +298,9 @@
             // pictureBox8
             // 
             this.pictureBox8.Image = global::UserInterfaceLayer.Properties.Resources.Number_32;
-            this.pictureBox8.Location = new System.Drawing.Point(185, 294);
+            this.pictureBox8.Location = new System.Drawing.Point(140, 283);
             this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(30, 27);
+            this.pictureBox8.Size = new System.Drawing.Size(22, 22);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox8.TabIndex = 136;
             this.pictureBox8.TabStop = false;
@@ -292,9 +308,9 @@
             // pictureBox10
             // 
             this.pictureBox10.Image = global::UserInterfaceLayer.Properties.Resources.Man_32;
-            this.pictureBox10.Location = new System.Drawing.Point(185, 256);
+            this.pictureBox10.Location = new System.Drawing.Point(140, 247);
             this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(30, 27);
+            this.pictureBox10.Size = new System.Drawing.Size(22, 22);
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox10.TabIndex = 134;
             this.pictureBox10.TabStop = false;
@@ -302,9 +318,9 @@
             // pictureBox11
             // 
             this.pictureBox11.Image = global::UserInterfaceLayer.Properties.Resources.Email_32;
-            this.pictureBox11.Location = new System.Drawing.Point(525, 142);
+            this.pictureBox11.Location = new System.Drawing.Point(500, 139);
             this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(30, 27);
+            this.pictureBox11.Size = new System.Drawing.Size(22, 22);
             this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox11.TabIndex = 135;
             this.pictureBox11.TabStop = false;
@@ -312,18 +328,19 @@
             // pictureBox12
             // 
             this.pictureBox12.Image = global::UserInterfaceLayer.Properties.Resources.Address_32;
-            this.pictureBox12.Location = new System.Drawing.Point(525, 180);
+            this.pictureBox12.Location = new System.Drawing.Point(500, 175);
             this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(30, 27);
+            this.pictureBox12.Size = new System.Drawing.Size(22, 22);
+            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox12.TabIndex = 137;
             this.pictureBox12.TabStop = false;
             // 
             // pictureBox9
             // 
             this.pictureBox9.Image = global::UserInterfaceLayer.Properties.Resources.Calendar_32;
-            this.pictureBox9.Location = new System.Drawing.Point(185, 28);
+            this.pictureBox9.Location = new System.Drawing.Point(140, 31);
             this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(30, 27);
+            this.pictureBox9.Size = new System.Drawing.Size(22, 22);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox9.TabIndex = 133;
             this.pictureBox9.TabStop = false;
@@ -331,9 +348,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::UserInterfaceLayer.Properties.Resources.Phone_32;
-            this.pictureBox1.Location = new System.Drawing.Point(185, 218);
+            this.pictureBox1.Location = new System.Drawing.Point(140, 211);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(30, 27);
+            this.pictureBox1.Size = new System.Drawing.Size(22, 22);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 132;
             this.pictureBox1.TabStop = false;
@@ -341,9 +358,9 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = global::UserInterfaceLayer.Properties.Resources.Number_32;
-            this.pictureBox4.Location = new System.Drawing.Point(185, 142);
+            this.pictureBox4.Location = new System.Drawing.Point(140, 139);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(30, 27);
+            this.pictureBox4.Size = new System.Drawing.Size(22, 22);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 130;
             this.pictureBox4.TabStop = false;
@@ -351,9 +368,9 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::UserInterfaceLayer.Properties.Resources.Man_32;
-            this.pictureBox2.Location = new System.Drawing.Point(185, 180);
+            this.pictureBox2.Location = new System.Drawing.Point(140, 175);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(30, 27);
+            this.pictureBox2.Size = new System.Drawing.Size(22, 22);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 128;
             this.pictureBox2.TabStop = false;
@@ -361,9 +378,9 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::UserInterfaceLayer.Properties.Resources.Email_32;
-            this.pictureBox3.Location = new System.Drawing.Point(185, 104);
+            this.pictureBox3.Location = new System.Drawing.Point(140, 103);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(30, 27);
+            this.pictureBox3.Size = new System.Drawing.Size(22, 22);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 129;
             this.pictureBox3.TabStop = false;
@@ -371,139 +388,153 @@
             // pictureBox5
             // 
             this.pictureBox5.Image = global::UserInterfaceLayer.Properties.Resources.Address_32;
-            this.pictureBox5.Location = new System.Drawing.Point(185, 66);
+            this.pictureBox5.Location = new System.Drawing.Point(140, 67);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(30, 27);
+            this.pictureBox5.Size = new System.Drawing.Size(22, 22);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox5.TabIndex = 131;
             this.pictureBox5.TabStop = false;
             // 
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("MingLiU_MSCS-ExtB", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(352, 228);
+            this.label18.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.label18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(85)))), ((int)(((byte)(105)))));
+            this.label18.Location = new System.Drawing.Point(375, 214);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(108, 17);
+            this.label18.Size = new System.Drawing.Size(68, 17);
             this.label18.TabIndex = 127;
             this.label18.Text = "Driver ID:";
             // 
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("MingLiU_MSCS-ExtB", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(352, 266);
+            this.label17.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.label17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(85)))), ((int)(((byte)(105)))));
+            this.label17.Location = new System.Drawing.Point(375, 250);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(168, 17);
+            this.label17.Size = new System.Drawing.Size(107, 17);
             this.label17.TabIndex = 126;
             this.label17.Text = "Expiration Date:";
             // 
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("MingLiU_MSCS-ExtB", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(12, 152);
+            this.label16.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(85)))), ((int)(((byte)(105)))));
+            this.label16.Location = new System.Drawing.Point(16, 142);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(128, 17);
+            this.label16.Size = new System.Drawing.Size(86, 17);
             this.label16.TabIndex = 125;
             this.label16.Text = "National No:";
             // 
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("MingLiU_MSCS-ExtB", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(12, 228);
+            this.label15.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(85)))), ((int)(((byte)(105)))));
+            this.label15.Location = new System.Drawing.Point(16, 214);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(118, 17);
+            this.label15.Size = new System.Drawing.Size(75, 17);
             this.label15.TabIndex = 124;
             this.label15.Text = "Issue Date:";
             // 
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("MingLiU_MSCS-ExtB", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(12, 304);
+            this.label14.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(85)))), ((int)(((byte)(105)))));
+            this.label14.Location = new System.Drawing.Point(16, 286);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(68, 17);
+            this.label14.Size = new System.Drawing.Size(48, 17);
             this.label14.TabIndex = 123;
             this.label14.Text = "Notes:";
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("MingLiU_MSCS-ExtB", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(352, 152);
+            this.label12.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(85)))), ((int)(((byte)(105)))));
+            this.label12.Location = new System.Drawing.Point(375, 142);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(108, 17);
+            this.label12.Size = new System.Drawing.Size(68, 17);
             this.label12.TabIndex = 122;
             this.label12.Text = "Is Active?";
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("MingLiU_MSCS-ExtB", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(12, 266);
+            this.label11.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(85)))), ((int)(((byte)(105)))));
+            this.label11.Location = new System.Drawing.Point(16, 250);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(138, 17);
+            this.label11.Size = new System.Drawing.Size(92, 17);
             this.label11.TabIndex = 121;
             this.label11.Text = "Issue Reason:";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("MingLiU_MSCS-ExtB", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(12, 114);
+            this.label9.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(85)))), ((int)(((byte)(105)))));
+            this.label9.Location = new System.Drawing.Point(16, 106);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(128, 17);
+            this.label9.Size = new System.Drawing.Size(75, 17);
             this.label9.TabIndex = 120;
-            this.label9.Text = "License ID :";
+            this.label9.Text = "License ID:";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("MingLiU_MSCS-ExtB", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(12, 76);
+            this.label8.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(85)))), ((int)(((byte)(105)))));
+            this.label8.Location = new System.Drawing.Point(16, 70);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(58, 17);
+            this.label8.Size = new System.Drawing.Size(48, 17);
             this.label8.TabIndex = 119;
             this.label8.Text = "Name:";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("MingLiU_MSCS-ExtB", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(12, 38);
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(85)))), ((int)(((byte)(105)))));
+            this.label7.Location = new System.Drawing.Point(16, 34);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(68, 17);
+            this.label7.Size = new System.Drawing.Size(43, 17);
             this.label7.TabIndex = 118;
             this.label7.Text = "Class:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("MingLiU_MSCS-ExtB", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(352, 190);
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(85)))), ((int)(((byte)(105)))));
+            this.label2.Location = new System.Drawing.Point(375, 178);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(148, 17);
+            this.label2.Size = new System.Drawing.Size(92, 17);
             this.label2.TabIndex = 117;
-            this.label2.Text = "Date Of Birth:";
+            this.label2.Text = "Date of Birth:";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("MingLiU_MSCS-ExtB", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 190);
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(85)))), ((int)(((byte)(105)))));
+            this.label1.Location = new System.Drawing.Point(16, 178);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(78, 17);
+            this.label1.Size = new System.Drawing.Size(56, 17);
             this.label1.TabIndex = 116;
-            this.label1.Text = "Gendor:";
+            this.label1.Text = "Gender:";
             // 
             // ctrlDriverLicenseInfoCard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.groupBox1);
             this.Name = "ctrlDriverLicenseInfoCard";
-            this.Size = new System.Drawing.Size(937, 343);
+            this.Size = new System.Drawing.Size(936, 343);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbDriverImage)).EndInit();

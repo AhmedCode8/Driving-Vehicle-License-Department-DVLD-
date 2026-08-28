@@ -1,2 +1,0 @@
-C:\Users\HP\Documents\3.project documents\DVLD_Project\TestLayer\obj\Debug\TestLayer.csproj.AssemblyReference.cache
-C:\Users\HP\Documents\3.project documents\DVLD_Project\TestLayer\obj\Debug\TestLayer.csproj.CoreCompileInputs.cache

@@ -52,7 +52,7 @@
     <Compile Include="License Class\clsLicenses.cs" />
     <Compile Include="tests\clsTest.cs" />
     <Compile Include="Country\clsCountryPOCO.cs" />
-    <Compile Include="Country\clsCountryRepository.cs" />
+    <Compile Include="Country\clsCountry.cs" />
     <Compile Include="Global Classes\clsGlobal.cs" />
     <Compile Include="License Class\clsLicenseClass.cs" />
     <Compile Include="Local Driving License Application\clsLocalDrivingLicenseApplication.cs" />

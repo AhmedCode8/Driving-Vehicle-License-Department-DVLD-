@@ -12,10 +12,12 @@ namespace UserInterfaceLayer.Application_Type
         {
             InitializeComponent();
         }
+        public event Action ApplicationTypeUpdated;
         public frmUpdateApplicationType(int applicationTypeID)
         {
-            Info = clsApplicationTypes.GetApplicationTypeByID(applicationTypeID);
             InitializeComponent();
+
+            Info = clsApplicationTypes.GetApplicationTypeByID(applicationTypeID);
         }
 
         private void btnClose_Click(object sender, EventArgs e)
@@ -25,6 +27,7 @@ namespace UserInterfaceLayer.Application_Type
 
         private void frmUpdateApplicationType_Load(object sender, EventArgs e)
         {
+            if (Info == null) return;
             lblApplicationTypeID.Text = Info.ApplicationTypeID.ToString();
             txtTitle.Text = Info.ApplicationTypeTitle;
             txtFees.Text = Info.ApplicationFees.ToString();
@@ -34,7 +37,6 @@ namespace UserInterfaceLayer.Application_Type
         {
             Info.ApplicationTypeTitle = txtTitle.Text.Trim();
 
-            // 2. تحويل الرسوم (Fees) من نص إلى رقم عشري بأمان لمنع الـ Crash
             if (decimal.TryParse(txtFees.Text.Trim(), out decimal fees))
             {
                 Info.ApplicationFees = fees;
@@ -48,6 +50,7 @@ namespace UserInterfaceLayer.Application_Type
 
             if (clsApplicationTypes.UpdateApplicationType(Info) != 0)
             {
+                ApplicationTypeUpdated?.Invoke();
                 MessageBox.Show("Order type data updated successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.Close();
             }

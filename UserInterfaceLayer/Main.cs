@@ -1,7 +1,12 @@
 ﻿using DVDL_Logic_layer.Global_Classes;
 using System;
 using System.Windows.Forms;
+using UserInterfaceLayer.Application_Type;
+using UserInterfaceLayer.International_License_Applications;
+using UserInterfaceLayer.License_Detain;
+using UserInterfaceLayer.Local_Driving_License_Application;
 using UserInterfaceLayer.People;
+using UserInterfaceLayer.Test_Types;
 using UserInterfaceLayer.Users;
 namespace UserInterfaceLayer
 {
@@ -19,101 +24,93 @@ namespace UserInterfaceLayer
             frmManagePeople.ShowDialog();
         }
 
-        // Users Management
+        // Users Management & Drivers
         private void tsmiUsers_Click(object sender, EventArgs e)
         {
-            //  frmManageUsers manageUsersForm = new frmManageUsers();
-            //  manageUsersForm.ShowDialog();
+            frmManageUsers manageUsersForm = new frmManageUsers();
+            manageUsersForm.ShowDialog();
         }
-
-        // Account Settings Sub-Menu
-        private void tsmiCurrentUserInfo_Click(object sender, EventArgs e)
+        private void tsmiDrivers_Click(object sender, EventArgs e)
         {
-            frmUserInfo frmUser = new frmUserInfo(clsGlobal.CurrentUser.UserID);
-            frmUser.ShowDialog();
-        }
-
-        private void tsmiChangePassword_Click(object sender, EventArgs e)
-        {
-            //  frmChangePassword frmChangePassword = new frmChangePassword(clsGlobal.CurrentUser);
-            // frmChangePassword.ShowDialog();
+            frmManageDrivers frm = new frmManageDrivers();
+            frm.ShowDialog();
         }
 
         // Application & Test Types Management
         private void tsmiManageApplicationTypes_Click(object sender, EventArgs e)
         {
-            // frmManageApplicationTypes frmManageApplicationTypes = new frmManageApplicationTypes();
-            // frmManageApplicationTypes.ShowDialog();
+            frmManageApplicationTypes frm = new frmManageApplicationTypes();
+            frm.ShowDialog();
         }
 
         private void tsmiManageTestTypes_Click(object sender, EventArgs e)
         {
-            //frmManageTestTypes frmManageTestTypes = new frmManageTestTypes();
-            //frmManageTestTypes.ShowDialog();
+            frmManageTestTypes frm = new frmManageTestTypes();
+            frm.ShowDialog();
         }
 
         // Driving License Applications Sub-Menu
         private void tsmiLocalLicense_Click(object sender, EventArgs e)
         {
-            //frmNewLocalDrivingLicenseApplication frmNewLocalDrivingLicenseApplication = new frmNewLocalDrivingLicenseApplication();
-            //frmNewLocalDrivingLicenseApplication.ShowDialog();
+            frmNewLocalDrivingLicenseApplication frm = new frmNewLocalDrivingLicenseApplication();
+            frm.ShowDialog();
         }
 
         private void tsmiLocalDrivingLicenseApplications_Click(object sender, EventArgs e)
         {
-            //frmManageLocalDrivingLicenseApplications frmManageLocalDrivingLicenseApplications = new frmManageLocalDrivingLicenseApplications();
-            //frmManageLocalDrivingLicenseApplications.ShowDialog();
+            frmManageLocalDrivingLicenseApplications frm = new frmManageLocalDrivingLicenseApplications();
+            frm.ShowDialog();
         }
 
         private void tsmiInternationalLicense_Click(object sender, EventArgs e)
         {
-            //frmNewlnternationalLicenseApplication frmNew = new frmNewlnternationalLicenseApplication();
-            // frmNew.ShowDialog();
+            frmNewlnternationalLicenseApplication frm = new frmNewlnternationalLicenseApplication();
+            frm.ShowDialog();
         }
 
         private void tsmiInternationalLicenseApplications_Click(object sender, EventArgs e)
         {
-            //frmManageInternationalLicenseApplications frmManageInternational = new frmManageInternationalLicenseApplications();
-            // frmManageInternational.ShowDialog();
+            frmManageInternationalLicenseApplications frm = new frmManageInternationalLicenseApplications();
+            frm.ShowDialog();
         }
 
         private void tsmiRenewDrivingLicense_Click(object sender, EventArgs e)
         {
-            //frmRenewLicenseApplication frmRenewLicenseApplication = new frmRenewLicenseApplication();
-            // frmRenewLicenseApplication.ShowDialog();
+            frmRenewLicenseApplication frm = new frmRenewLicenseApplication();
+            frm.ShowDialog();
         }
 
         private void tsmiReplacementForLostOrDamagedLicense_Click(object sender, EventArgs e)
         {
-            //frmReplacementforDamagedLicense frmReplacementFor = new frmReplacementforDamagedLicense();
-            // frmReplacementFor.ShowDialog();
+            frmReplacementforDamagedLicense frm = new frmReplacementforDamagedLicense();
+            frm.ShowDialog();
         }
 
         // Detain & Release Licenses Sub-Menu
         private void tsmiDetainLicense_Click(object sender, EventArgs e)
         {
-            // frmLicenseDetain frmLicenseDetain = new frmLicenseDetain();
-            // frmLicenseDetain.ShowDialog();
+            frmLicenseDetain frm = new frmLicenseDetain();
+            frm.ShowDialog();
         }
 
         private void tsmiReleaseDetainedLicense_Click(object sender, EventArgs e)
         {
 
-            // frmReleaseDetainedLicense frmManageDetainedLicense = new frmReleaseDetainedLicense();
-            //frmManageDetainedLicense.ShowDialog();
+            frmReleaseDetainedLicense frm = new frmReleaseDetainedLicense();
+            frm.ShowDialog();
 
         }
 
         private void tsmiManageDetainedLicenses_Click(object sender, EventArgs e)
         {
-            // frmManageDetainedLicenses frmManageDetainedLicenses = new frmManageDetainedLicenses();
-            // frmManageDetainedLicenses.ShowDialog();
+            frmManageDetainedLicenses frm = new frmManageDetainedLicenses();
+            frm.ShowDialog();
         }
 
         private void tsmiReleaseDetainedDrivingLicense_Click(object sender, EventArgs e)
         {
-            // frmReleaseDetainedLicense frmReleaseDetainedLicense = new frmReleaseDetainedLicense();
-            //frmReleaseDetainedLicense.ShowDialog();
+            frmReleaseDetainedLicense frm = new frmReleaseDetainedLicense();
+            frm.ShowDialog();
         }
 
         private void tsmiNewDrivingLicense_Click(object sender, EventArgs e)
@@ -121,11 +118,26 @@ namespace UserInterfaceLayer
             // إضافية جاهزة للاستخدام مستقبلاً
         }
 
+
+        // Account Settings Sub-Menu
+        private void tsmiCurrentUserInfo_Click(object sender, EventArgs e)
+        {
+            frmUserInfo frmUser = new frmUserInfo(clsGlobal.CurrentUser.UserID);
+            frmUser.ShowDialog();
+        }
+        private void tsmiChangePassword_Click(object sender, EventArgs e)
+        {
+            frmChangePassword frmChangePassword = new frmChangePassword(clsGlobal.CurrentUser);
+            frmChangePassword.ShowDialog();
+        }
         private void tsmiSignOut_Click(object sender, EventArgs e)
         {
             this.Close();
             frmLoginScreen loginScreen = new frmLoginScreen();
             loginScreen.Show();
         }
+
+
+
     }
 }

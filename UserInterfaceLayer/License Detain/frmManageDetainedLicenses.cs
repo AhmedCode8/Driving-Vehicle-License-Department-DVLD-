@@ -19,14 +19,16 @@ namespace UserInterfaceLayer.License_Detain
 
         private void btnReleaseDetainedLicense_Click(object sender, System.EventArgs e)
         {
-            frmReleaseDetainedLicense frmManageDetainedLicense = new frmReleaseDetainedLicense();
-            frmManageDetainedLicense.ShowDialog();
+            frmReleaseDetainedLicense frm = new frmReleaseDetainedLicense();
+            frm.OnReleaseDetainedLicense += _RefreshList;
+            frm.ShowDialog();
         }
 
         private void btnDetainLicense_Click(object sender, System.EventArgs e)
         {
-            frmLicenseDetain frmLicenseDetain = new frmLicenseDetain();
-            frmLicenseDetain.ShowDialog();
+            frmLicenseDetain frm = new frmLicenseDetain();
+            frm.OnLicenseDetain += _RefreshList;
+            frm.ShowDialog();
         }
 
         private void btnClose_Click(object sender, System.EventArgs e)
@@ -34,15 +36,15 @@ namespace UserInterfaceLayer.License_Detain
             this.Close();
         }
 
-        DataTable _dtSource;
+        DataTable _dtDetainedLicenses;
         private void _RefreshList()
         {
             // جلب البيانات وتخزينها في المتغير العام أولاً
-            _dtSource = clsDetainedLicense.GetAllDetainedLicenses();
+            _dtDetainedLicenses = clsDetainedLicense.GetAllDetainedLicenses();
 
             // ربط الـ Grid بالمتغير العام مباشرة لتتضح الرؤية
-            dgvDetainedLicenses.DataSource = _dtSource;
-            lblRecordCount.Text = _dtSource.Rows.Count.ToString();
+            dgvDetainedLicenses.DataSource = _dtDetainedLicenses;
+            lblRecordCount.Text = _dtDetainedLicenses.Rows.Count.ToString();
         }
         private void _LayoutDataGridView()
         {
@@ -186,11 +188,96 @@ namespace UserInterfaceLayer.License_Detain
 
             // 4. فتح شاشة فك الاحتجاز وتمرين رقم الرخصة لها
             frmReleaseDetainedLicense frm = new frmReleaseDetainedLicense(licenseID);
+            frm.OnReleaseDetainedLicense += _RefreshList;
             frm.ShowDialog();
 
-            // 5. تحديث جدول الرخص المحتجزة بعد إغلاق الشاشة لإنعاش البيانات
-            _RefreshList();
 
+        }
+
+        //code of Filter
+        private void cbFilterBy_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            txtFilterValue.Visible = (cbFilterBy.Text != "None");
+
+            if (txtFilterValue.Visible)
+            {
+                txtFilterValue.Text = "";
+                txtFilterValue.Focus();
+            }
+
+            // إعادة ضبط الفلتر وإعادة حساب عدد السجلات عند تغيير نوع الفلتر
+            if (_dtDetainedLicenses != null)
+                _dtDetainedLicenses.DefaultView.RowFilter = "";
+
+            lblRecordCount.Text = dgvDetainedLicenses.Rows.Count.ToString();
+        }
+        //-------------------
+        private string _GetSelectedFilterColumn()
+        {
+            switch (cbFilterBy.Text)
+            {
+                case "Detain ID": return "D.ID";
+                case "Is Released": return "Is Released";
+                case "National No.": return "N.No.";
+                case "Full Name": return "Full Name";
+                case "Release Application ID": return "Release App.ID";
+                default: return "None";
+            }
+        }
+
+
+        private void _ApplyFilterToTable(string filterColumn, string filterValue)
+        {
+            // 1. فلترة الأعمدة الرقمية
+            if (filterColumn == "D.ID" || filterColumn == "Release App.ID")
+            {
+                _dtDetainedLicenses.DefaultView.RowFilter = string.Format("[{0}] = {1}", filterColumn, filterValue);
+            }
+            // 2. فلترة عمود الإفراج (Boolean / Bit)
+            else if (filterColumn == "Is Released")
+            {
+                string val = filterValue.ToLower();
+                if (val == "1" || val == "true" || val == "yes" || val == "نعم")
+                    _dtDetainedLicenses.DefaultView.RowFilter = "[Is Released] = true";
+                else if (val == "0" || val == "false" || val == "no" || val == "لا")
+                    _dtDetainedLicenses.DefaultView.RowFilter = "[Is Released] = false";
+                else
+                    _dtDetainedLicenses.DefaultView.RowFilter = "1 = 0"; // إخفاء الكل إذا أدخل قيمة غير منطقية
+            }
+            // 3. فلترة الأعمدة النصية
+            else
+            {
+                _dtDetainedLicenses.DefaultView.RowFilter = string.Format("[{0}] LIKE '{1}%'", filterColumn, filterValue);
+            }
+        }
+        private void txtFilterValue_TextChanged(object sender, EventArgs e)
+        {
+            string filterColumn = _GetSelectedFilterColumn();
+            string filterValue = txtFilterValue.Text.Trim();
+
+            // إذا كان الحقل فارغاً أو العمود غير معرّف، قم بإلغاء الفلتر
+            if (string.IsNullOrWhiteSpace(filterValue) || filterColumn == "None")
+            {
+                _dtDetainedLicenses.DefaultView.RowFilter = "";
+            }
+            else
+            {
+                _ApplyFilterToTable(filterColumn, filterValue);
+            }
+
+            // تحديث عداد السجلات في النهاية دائماً
+            lblRecordCount.Text = dgvDetainedLicenses.Rows.Count.ToString();
+
+
+        }
+
+        private void txtFilterValue_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // منع كتابة غير الأرقام إذا كان الفلتر على المعرفات الرقمية
+            if (cbFilterBy.Text == "Detain ID" || cbFilterBy.Text == "Release Application ID")
+            {
+                e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
+            }
         }
     }
 }

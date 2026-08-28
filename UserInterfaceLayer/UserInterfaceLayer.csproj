@@ -67,6 +67,12 @@
     <Compile Include="Application Type\frmUpdateApplicationType.Designer.cs">
       <DependentUpon>frmUpdateApplicationType.cs</DependentUpon>
     </Compile>
+    <Compile Include="Drivers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Drivers.Designer.cs">
+      <DependentUpon>Drivers.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmLoginScreen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,12 +84,6 @@
     </Compile>
     <Compile Include="Application Type\frmManageApplicationTypes.Designer.cs">
       <DependentUpon>frmManageApplicationTypes.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmTestFrom.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmTestFrom.Designer.cs">
-      <DependentUpon>frmTestFrom.cs</DependentUpon>
     </Compile>
     <Compile Include="International License Applications\frmManageInternationalLicenseApplications.cs">
       <SubType>Form</SubType>
@@ -187,12 +187,6 @@
     <Compile Include="Test Types\Tests\frmListTestAppointments.Designer.cs">
       <DependentUpon>frmListTestAppointments.cs</DependentUpon>
     </Compile>
-    <Compile Include="ToolsContainer.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ToolsContainer.Designer.cs">
-      <DependentUpon>ToolsContainer.cs</DependentUpon>
-    </Compile>
     <Compile Include="User Control\ctrlAddNewPersonCard.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -219,12 +213,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="User Control\ctrlApplicationInfoCard.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="User Control\ctrlApplicationInfoCard.Designer.cs">
-      <DependentUpon>ctrlApplicationInfoCard.cs</DependentUpon>
-    </Compile>
     <Compile Include="User Control\ctrlDriverLicenseInfoCard.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -254,12 +242,6 @@
     </Compile>
     <Compile Include="User Control\ctrlFindUserCard.Designer.cs">
       <DependentUpon>ctrlFindUserCard.cs</DependentUpon>
-    </Compile>
-    <Compile Include="User Control\ctrlTakeTestCard.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="User Control\ctrlTakeTestCard.Designer.cs">
-      <DependentUpon>ctrlTakeTestCard.cs</DependentUpon>
     </Compile>
     <Compile Include="User Control\ctrlLicenseApplicationInInfoCard.cs">
       <SubType>UserControl</SubType>
@@ -306,14 +288,14 @@
     <EmbeddedResource Include="Application Type\frmUpdateApplicationType.resx">
       <DependentUpon>frmUpdateApplicationType.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Drivers.resx">
+      <DependentUpon>Drivers.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmLoginScreen.resx">
       <DependentUpon>frmLoginScreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Application Type\frmManageApplicationTypes.resx">
       <DependentUpon>frmManageApplicationTypes.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmTestFrom.resx">
-      <DependentUpon>frmTestFrom.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="International License Applications\frmManageInternationalLicenseApplications.resx">
       <DependentUpon>frmManageInternationalLicenseApplications.cs</DependentUpon>
@@ -366,9 +348,6 @@
     <EmbeddedResource Include="Test Types\Tests\frmListTestAppointments.resx">
       <DependentUpon>frmListTestAppointments.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ToolsContainer.resx">
-      <DependentUpon>ToolsContainer.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="User Control\ctrlAddNewPersonCard.resx">
       <DependentUpon>ctrlAddNewPersonCard.cs</DependentUpon>
     </EmbeddedResource>
@@ -391,9 +370,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="User Control\ctrlApplicationInfoCard.resx">
-      <DependentUpon>ctrlApplicationInfoCard.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="User Control\ctrlDriverLicenseInfoCard.resx">
       <DependentUpon>ctrlDriverLicenseInfoCard.cs</DependentUpon>
     </EmbeddedResource>
@@ -408,9 +384,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="User Control\ctrlPersonCard.resx">
       <DependentUpon>ctrlPersonCard.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="User Control\ctrlTakeTestCard.resx">
-      <DependentUpon>ctrlTakeTestCard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User Control\ctrlLicenseApplicationInInfoCard.resx">
       <DependentUpon>ctrlLicenseApplicationInInfoCard.cs</DependentUpon>

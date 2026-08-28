@@ -19,6 +19,7 @@ namespace UserInterfaceLayer.License_Detain
         {
             ctrlFilterIicenseCard1.OnLicenseSelected += CtrlFilterIicenseCard1_OnLicenseSelected;
         }
+        public event Action OnLicenseDetain;
         private bool _ValidateLicenseForDetain(clsLicenseDTO licenseInfo)
         {
             if (licenseInfo == null)
@@ -116,10 +117,12 @@ namespace UserInterfaceLayer.License_Detain
 
             if (result != -1)
             {
+
                 // تحديث الواجهة فور النجاح
                 lblDetainID.Text = result.ToString();
                 btnDetain.Enabled = false;
                 txtFineFees.Enabled = false;
+                OnLicenseDetain?.Invoke();
 
                 MessageBox.Show($"License Detained Successfully with ID = {result}", "License Detained", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
@@ -129,11 +132,6 @@ namespace UserInterfaceLayer.License_Detain
             }
         }
 
-        private void btnClose_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
         private void btnDetain_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("Are you sure you want to detain this license?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
@@ -141,5 +139,10 @@ namespace UserInterfaceLayer.License_Detain
                 _CreatDetentionLicenseRecord();
             }
         }
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
     }
 }
